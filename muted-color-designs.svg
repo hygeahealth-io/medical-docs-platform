@@ -1,0 +1,146 @@
+<svg viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="900" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="20" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">Muted Color Design Options</text>
+  
+  <!-- Current Design (too colorful) -->
+  <g transform="translate(20, 60)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">❌ Current: Too Much Color</text>
+    <rect x="0" y="25" width="720" height="120" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Filter bar with too much color -->
+    <rect x="20" y="35" width="680" height="35" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="30" y="55" font-family="Arial, sans-serif" font-size="11" fill="#1d4ed8">Group: Wounds (4) [+] [toggle] [⚙]</text>
+    
+    <!-- New Binding section with too much blue -->
+    <rect x="20" y="75" width="680" height="30" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+    <rect x="30" y="80" width="80" height="20" rx="4" fill="#3b82f6"/>
+    <text x="50" y="92" font-family="Arial, sans-serif" font-size="9" fill="white">New Binding</text>
+    
+    <!-- Key binding with bright colors -->
+    <rect x="20" y="110" width="680" height="30" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1"/>
+    <rect x="30" y="115" width="80" height="20" rx="4" fill="#3b82f6"/>
+    <text x="50" y="127" font-family="Arial, sans-serif" font-size="9" fill="white">Ctrl+Shift+W</text>
+    <text x="120" y="127" font-family="Arial, sans-serif" font-size="11" fill="#1d4ed8">Assessment - Wound assessment...</text>
+  </g>
+  
+  <!-- Option 1: Subtle Neutral -->
+  <g transform="translate(20, 200)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#15803d">✅ Option 1: Subtle Neutral</text>
+    <rect x="0" y="25" width="720" height="120" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Muted filter bar -->
+    <rect x="20" y="35" width="680" height="35" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="30" y="55" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">Group: Wounds (4) [+] [toggle] [⚙]</text>
+    
+    <!-- Subtle new binding section -->
+    <rect x="20" y="75" width="680" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+    <rect x="30" y="80" width="80" height="20" rx="4" fill="#475569"/>
+    <text x="50" y="92" font-family="Arial, sans-serif" font-size="9" fill="white">New Binding</text>
+    
+    <!-- Muted key binding -->
+    <rect x="20" y="110" width="680" height="30" rx="6" fill="#fafafa" stroke="#e5e7eb" stroke-width="1"/>
+    <!-- Outlined shortcut instead of solid -->
+    <rect x="30" y="115" width="80" height="20" rx="4" fill="none" stroke="#6b7280" stroke-width="1"/>
+    <text x="50" y="127" font-family="Arial, sans-serif" font-size="9" fill="#374151">Ctrl+Shift+W</text>
+    <text x="120" y="127" font-family="Arial, sans-serif" font-size="11" fill="#374151">Assessment - Wound assessment...</text>
+  </g>
+  
+  <!-- Option 2: Medical Theme Colors -->
+  <g transform="translate(20, 340)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#15803d">✅ Option 2: Medical Theme Colors</text>
+    <rect x="0" y="25" width="720" height="120" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Medical teal accents -->
+    <rect x="20" y="35" width="680" height="35" rx="6" fill="#f0fdfa" stroke="#5eead4" stroke-width="1"/>
+    <text x="30" y="55" font-family="Arial, sans-serif" font-size="11" fill="#0f766e">Group: Wounds (4) [+] [toggle] [⚙]</text>
+    
+    <!-- Soft teal new binding -->
+    <rect x="20" y="75" width="680" height="30" rx="6" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1"/>
+    <rect x="30" y="80" width="80" height="20" rx="4" fill="#0d9488"/>
+    <text x="50" y="92" font-family="Arial, sans-serif" font-size="9" fill="white">New Binding</text>
+    
+    <!-- Subtle teal key binding -->
+    <rect x="20" y="110" width="680" height="30" rx="6" fill="#fefefe" stroke="#e6fffa" stroke-width="1"/>
+    <rect x="30" y="115" width="80" height="20" rx="4" fill="none" stroke="#14b8a6" stroke-width="1"/>
+    <text x="50" y="127" font-family="Arial, sans-serif" font-size="9" fill="#0f766e">Ctrl+Shift+W</text>
+    <text x="120" y="127" font-family="Arial, sans-serif" font-size="11" fill="#374151">Assessment - Wound assessment...</text>
+  </g>
+  
+  <!-- Option 3: Monochromatic -->
+  <g transform="translate(20, 480)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#15803d">✅ Option 3: Monochromatic</text>
+    <rect x="0" y="25" width="720" height="120" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Pure grayscale -->
+    <rect x="20" y="35" width="680" height="35" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="30" y="55" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">Group: Wounds (4) [+] [toggle] [⚙]</text>
+    
+    <!-- Minimal contrast new binding -->
+    <rect x="20" y="75" width="680" height="30" rx="6" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+    <rect x="30" y="80" width="80" height="20" rx="4" fill="#374151"/>
+    <text x="50" y="92" font-family="Arial, sans-serif" font-size="9" fill="white">New Binding</text>
+    
+    <!-- Clean grayscale binding -->
+    <rect x="20" y="110" width="680" height="30" rx="6" fill="#fafafa" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="30" y="115" width="80" height="20" rx="4" fill="none" stroke="#9ca3af" stroke-width="1"/>
+    <text x="50" y="127" font-family="Arial, sans-serif" font-size="9" fill="#4b5563">Ctrl+Shift+W</text>
+    <text x="120" y="127" font-family="Arial, sans-serif" font-size="11" fill="#374151">Assessment - Wound assessment...</text>
+  </g>
+  
+  <!-- Shortcut Badge Alternatives -->
+  <g transform="translate(20, 620)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">Shortcut Badge Alternatives</text>
+    <rect x="0" y="25" width="720" height="200" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+    
+    <!-- Current (button-like) -->
+    <text x="20" y="50" font-family="Arial, sans-serif" font-size="12" fill="#dc2626">❌ Current: Button-like oval</text>
+    <rect x="20" y="55" width="80" height="24" rx="12" fill="#3b82f6"/>
+    <text x="40" y="69" font-family="Arial, sans-serif" font-size="10" fill="white">Ctrl+Shift+W</text>
+    
+    <!-- Alternative 1: Outlined rectangle -->
+    <text x="120" y="50" font-family="Arial, sans-serif" font-size="12" fill="#15803d">✅ Alt 1: Outlined</text>
+    <rect x="120" y="55" width="80" height="24" rx="4" fill="none" stroke="#6b7280" stroke-width="1"/>
+    <text x="140" y="69" font-family="Arial, sans-serif" font-size="10" fill="#374151">Ctrl+Shift+W</text>
+    
+    <!-- Alternative 2: Dashed border -->
+    <text x="220" y="50" font-family="Arial, sans-serif" font-size="12" fill="#15803d">✅ Alt 2: Dashed</text>
+    <rect x="220" y="55" width="80" height="24" rx="4" fill="none" stroke="#9ca3af" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="240" y="69" font-family="Arial, sans-serif" font-size="10" fill="#4b5563">Ctrl+Shift+W</text>
+    
+    <!-- Alternative 3: Subtle background -->
+    <text x="320" y="50" font-family="Arial, sans-serif" font-size="12" fill="#15803d">✅ Alt 3: Subtle fill</text>
+    <rect x="320" y="55" width="80" height="24" rx="4" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="340" y="69" font-family="Arial, sans-serif" font-size="10" fill="#374151">Ctrl+Shift+W</text>
+    
+    <!-- Alternative 4: Monospace text only -->
+    <text x="420" y="50" font-family="Arial, sans-serif" font-size="12" fill="#15803d">✅ Alt 4: Text only</text>
+    <text x="420" y="69" font-family="Monaco, monospace" font-size="10" fill="#6b7280" style="background:#f9fafb; padding:4px;">Ctrl+Shift+W</text>
+    
+    <!-- Alternative 5: Code-style -->
+    <text x="20" y="100" font-family="Arial, sans-serif" font-size="12" fill="#15803d">✅ Alt 5: Code style</text>
+    <rect x="20" y="105" width="80" height="24" rx="2" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="25" y="119" font-family="Monaco, monospace" font-size="9" fill="#475569">Ctrl+Shift+W</text>
+    
+    <!-- Alternative 6: Keyboard key style -->
+    <text x="120" y="100" font-family="Arial, sans-serif" font-size="12" fill="#15803d">✅ Alt 6: Keyboard key</text>
+    <rect x="120" y="105" width="80" height="24" rx="3" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <rect x="120" y="107" width="80" height="20" rx="3" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="140" y="119" font-family="Arial, sans-serif" font-size="9" fill="#374151">Ctrl+Shift+W</text>
+    
+    <text x="20" y="150" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">Recommendation:</text>
+    <text x="20" y="165" font-family="Arial, sans-serif" font-size="10" fill="#374151">• Alternative 3 (Subtle fill) or Alternative 6 (Keyboard key) for best UX</text>
+    <text x="20" y="178" font-family="Arial, sans-serif" font-size="10" fill="#374151">• Removes button-like appearance while maintaining readability</text>
+    <text x="20" y="191" font-family="Arial, sans-serif" font-size="10" fill="#374151">• Keyboard key style feels most natural for shortcut display</text>
+  </g>
+  
+  <!-- Final Recommendation -->
+  <g transform="translate(20, 840)">
+    <rect x="0" y="0" width="720" height="50" fill="#eff6ff" rx="8" stroke="#3b82f6" stroke-width="1"/>
+    <text x="20" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1d4ed8">🎯 Recommended Combination</text>
+    <text x="20" y="35" font-family="Arial, sans-serif" font-size="10" fill="#1d4ed8">Option 2 (Medical Theme) + Alternative 6 (Keyboard Key Style)</text>
+    <text x="20" y="45" font-family="Arial, sans-serif" font-size="10" fill="#1d4ed8">Maintains brand consistency while reducing visual noise</text>
+  </g>
+</svg>

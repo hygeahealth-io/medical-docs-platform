@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickDoc Gold - Quality Check</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-teal': '#0891b2',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Gold Member Tools Interface -->
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <aside class="w-60 bg-white shadow-sm border-r border-gray-200 flex flex-col">
+            <!-- Logo Section -->
+            <div class="p-6 border-b border-gray-200">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-medical-teal rounded-lg flex items-center justify-center">
+                        <i data-lucide="file-text" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">ClickDoc</span>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="flex-1 p-4 space-y-1">
+                <a href="#" class="flex items-center space-x-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">
+                    <i data-lucide="layout-dashboard" class="w-5 h-5"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-3 py-2 rounded-lg bg-medical-teal text-white">
+                    <i data-lucide="wrench" class="w-5 h-5"></i>
+                    <span>Tools</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">
+                    <i data-lucide="credit-card" class="w-5 h-5"></i>
+                    <span>Membership</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">
+                    <i data-lucide="settings" class="w-5 h-5"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <!-- User Tier Status -->
+            <div class="p-4 border-t border-gray-200">
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="crown" class="w-4 h-4 text-yellow-600"></i>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-50 text-yellow-700 border border-yellow-200">
+                                GOLD
+                            </span>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-50 text-green-700 border border-green-200">
+                            Active
+                        </span>
+                    </div>
+                    <div class="text-xs text-gray-500">
+                        <p>Expires: 12/31/2024</p>
+                    </div>
+                    <button class="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-sm py-2 px-4 rounded-md flex items-center justify-center space-x-2">
+                        <i data-lucide="arrow-up" class="w-4 h-4"></i>
+                        <span>Upgrade Now</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Logout Button -->
+            <div class="p-4 border-t border-gray-200">
+                <button class="w-full flex items-center justify-start space-x-3 px-3 py-2 text-red-600 hover:text-red-700 hover:bg-red-50 rounded-lg">
+                    <i data-lucide="log-out" class="w-5 h-5"></i>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8">
+            <div class="max-w-6xl mx-auto">
+                <!-- Header -->
+                <div class="mb-8">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h1 class="text-3xl font-bold text-gray-900 mb-2">Medical Tools</h1>
+                            <p class="text-gray-600">Automated documentation and data entry tools</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-50 text-yellow-700 border border-yellow-200">
+                                <i data-lucide="crown" class="w-3 h-3 mr-1"></i>
+                                Gold Member
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Tabs -->
+                <div class="space-y-6">
+                    <!-- Tab Navigation -->
+                    <div class="border-b border-gray-200">
+                        <nav class="flex space-x-8">
+                            <button class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 py-2 px-1 text-sm font-medium flex items-center space-x-2">
+                                <i data-lucide="file-text" class="w-4 h-4"></i>
+                                <span>Report Generator</span>
+                            </button>
+                            <button class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 py-2 px-1 text-sm font-medium flex items-center space-x-2">
+                                <i data-lucide="activity" class="w-4 h-4"></i>
+                                <span>Vitals Generator</span>
+                            </button>
+                            <button class="border-b-2 border-medical-teal text-medical-teal py-2 px-1 text-sm font-medium flex items-center space-x-2">
+                                <i data-lucide="check-circle" class="w-4 h-4"></i>
+                                <span>Quality Check</span>
+                            </button>
+                            <button class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 py-2 px-1 text-sm font-medium flex items-center space-x-2">
+                                <i data-lucide="keyboard" class="w-4 h-4"></i>
+                                <span>Custom Keys</span>
+                            </button>
+                        </nav>
+                    </div>
+
+                    <!-- Quality Check Tool - Platinum Only -->
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg shadow-sm">
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <i data-lucide="lock" class="w-5 h-5 text-gray-400"></i>
+                                <h3 class="text-lg font-semibold text-gray-400">Medical Documentation Quality Check</h3>
+                                <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                                    PLATINUM ONLY
+                                </span>
+                            </div>
+                            <p class="text-gray-500">Advanced automated review and validation of medical documentation requires Platinum membership</p>
+                        </div>
+                        
+                        <div class="p-6 text-center">
+                            <div class="max-w-md mx-auto">
+                                <i data-lucide="crown" class="w-16 h-16 text-purple-300 mx-auto mb-4"></i>
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Upgrade to Platinum</h4>
+                                <p class="text-gray-600 mb-6">Unlock advanced quality checking with AI-powered clinical insights, real-time validation, and comprehensive compliance analysis.</p>
+                                
+                                <div class="bg-white rounded-lg p-4 border border-purple-200 mb-6">
+                                    <h5 class="font-medium text-purple-900 mb-3">Platinum Quality Check Features:</h5>
+                                    <div class="text-sm text-purple-800 space-y-2 text-left">
+                                        <p>• <strong>Real-time Validation:</strong> Live quality checking as you type</p>
+                                        <p>• <strong>AI Clinical Insights:</strong> Advanced decision support and risk assessment</p>
+                                        <p>• <strong>Custom Quality Standards:</strong> Define institutional quality metrics</p>
+                                        <p>• <strong>Batch Processing:</strong> Quality check multiple documents simultaneously</p>
+                                        <p>• <strong>EMR Integration:</strong> Seamless workflow integration with existing systems</p>
+                                        <p>• <strong>Compliance Reporting:</strong> Automated regulatory compliance documentation</p>
+                                    </div>
+                                </div>
+                                
+                                <button class="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 rounded-md flex items-center justify-center space-x-2 mx-auto">
+                                    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+                                    <span>Upgrade to Platinum Now</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

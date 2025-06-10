@@ -1,0 +1,254 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="20" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">Alternative Button Layout Designs</text>
+  
+  <!-- Design 1: New Group after dropdown, New Binding above list -->
+  <g transform="translate(20, 60)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#059669">✅ Option 1: Sequential Layout</text>
+    
+    <!-- Header (clean) -->
+    <rect x="0" y="30" width="550" height="40" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="15" y="50" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#374151">Custom Key Bindings</text>
+    <text x="15" y="62" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">Configure keyboard shortcuts for quick text insertion</text>
+    
+    <!-- Filter section -->
+    <rect x="0" y="80" width="550" height="40" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="15" y="98" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">Filter by group:</text>
+    
+    <!-- Dropdown -->
+    <rect x="15" y="102" width="160" height="24" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="20" y="116" font-family="Arial, sans-serif" font-size="10" fill="#374151">Wounds (4 bindings)</text>
+    <polygon points="170,110 175,115 165,115" fill="#6b7280"/>
+    
+    <!-- New Group button right after dropdown -->
+    <rect x="185" y="102" width="80" height="24" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="205" y="116" font-family="Arial, sans-serif" font-size="10" fill="#374151">+ New Group</text>
+    
+    <!-- Show inactive toggle -->
+    <text x="285" y="112" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">Show inactive</text>
+    <rect x="355" y="108" width="30" height="14" rx="7" fill="#e2e8f0"/>
+    <circle cx="362" cy="115" r="5" fill="white"/>
+    
+    <!-- Settings -->
+    <rect x="405" y="102" width="60" height="24" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="425" y="116" font-family="Arial, sans-serif" font-size="10" fill="#374151">Settings</text>
+    
+    <!-- New Binding section -->
+    <rect x="0" y="130" width="550" height="35" rx="6" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <rect x="15" y="137" width="100" height="21" rx="4" fill="#3b82f6"/>
+    <text x="40" y="149" font-family="Arial, sans-serif" font-size="10" fill="white">+ New Binding</text>
+    <text x="130" y="149" font-family="Arial, sans-serif" font-size="10" fill="#3b82f6">Create a new keyboard shortcut</text>
+    
+    <!-- Key bindings list -->
+    <rect x="0" y="175" width="550" height="80" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="15" y="195" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#374151">Key Bindings (4 items)</text>
+    
+    <rect x="15" y="205" width="520" height="22" rx="3" fill="#eff6ff"/>
+    <text x="20" y="218" font-family="Arial, sans-serif" font-size="10" fill="#1d4ed8">Ctrl+Shift+W</text>
+    <text x="120" y="218" font-family="Arial, sans-serif" font-size="10" fill="#374151">Wound assessment template</text>
+    
+    <rect x="15" y="230" width="520" height="22" rx="3" fill="#f8fafc"/>
+    <text x="20" y="243" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">Ctrl+Alt+D</text>
+    <text x="120" y="243" font-family="Arial, sans-serif" font-size="10" fill="#374151">Wound dressing documentation</text>
+    
+    <text x="15" y="275" font-family="Arial, sans-serif" font-size="10" fill="#059669">Pro: Clear separation of concerns, logical flow</text>
+  </g>
+  
+  <!-- Design 2: Inline actions with better spacing -->
+  <g transform="translate(600, 60)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#059669">✅ Option 2: Inline with Better Spacing</text>
+    
+    <!-- Header -->
+    <rect x="0" y="30" width="550" height="35" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="15" y="48" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#374151">Custom Key Bindings</text>
+    <text x="15" y="60" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">Configure keyboard shortcuts</text>
+    
+    <!-- Filter section with better spacing -->
+    <rect x="0" y="75" width="550" height="45" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Row 1: Filter controls -->
+    <text x="15" y="93" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">Filter by group:</text>
+    <rect x="15" y="96" width="140" height="22" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="20" y="108" font-family="Arial, sans-serif" font-size="9" fill="#374151">Wounds (4 bindings)</text>
+    
+    <rect x="165" y="96" width="75" height="22" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="185" y="108" font-family="Arial, sans-serif" font-size="9" fill="#374151">+ New Group</text>
+    
+    <!-- Row 2: Other controls -->
+    <text x="260" y="104" font-family="Arial, sans-serif" font-size="9" fill="#6b7280">Show inactive</text>
+    <rect x="325" y="99" width="25" height="12" rx="6" fill="#e2e8f0"/>
+    <circle cx="331" cy="105" r="4" fill="white"/>
+    
+    <rect x="370" y="96" width="50" height="22" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="385" y="108" font-family="Arial, sans-serif" font-size="9" fill="#374151">Settings</text>
+    
+    <!-- Action bar -->
+    <rect x="0" y="130" width="550" height="30" rx="6" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <rect x="15" y="135" width="90" height="20" rx="4" fill="#3b82f6"/>
+    <text x="35" y="146" font-family="Arial, sans-serif" font-size="9" fill="white">+ New Binding</text>
+    <text x="120" y="146" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6">Create keyboard shortcut for current group</text>
+    
+    <!-- List -->
+    <rect x="0" y="170" width="550" height="60" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="15" y="188" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#374151">Wounds Group - 4 Key Bindings</text>
+    <rect x="15" y="195" width="520" height="18" rx="2" fill="#eff6ff"/>
+    <text x="20" y="205" font-family="Arial, sans-serif" font-size="9" fill="#1d4ed8">Ctrl+Shift+W - Wound assessment</text>
+    
+    <text x="15" y="250" font-family="Arial, sans-serif" font-size="10" fill="#059669">Pro: Compact, all related controls grouped</text>
+  </g>
+  
+  <!-- Design 3: Card-based layout -->
+  <g transform="translate(20, 340)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#059669">✅ Option 3: Card-Based Organization</text>
+    
+    <!-- Header -->
+    <rect x="0" y="30" width="550" height="30" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="15" y="48" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#374151">Custom Key Bindings</text>
+    
+    <!-- Filter card -->
+    <rect x="0" y="70" width="550" height="50" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="10" y="80" width="530" height="30" rx="4" fill="#f8fafc"/>
+    
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">Group:</text>
+    <rect x="60" y="85" width="120" height="20" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="65" y="96" font-family="Arial, sans-serif" font-size="9" fill="#374151">Wounds (4)</text>
+    
+    <rect x="190" y="85" width="65" height="20" rx="4" fill="#10b981"/>
+    <text x="205" y="96" font-family="Arial, sans-serif" font-size="9" fill="white">+ Group</text>
+    
+    <text x="270" y="92" font-family="Arial, sans-serif" font-size="9" fill="#6b7280">Show inactive</text>
+    <rect x="335" y="89" width="20" height="10" rx="5" fill="#3b82f6"/>
+    <circle cx="349" cy="94" r="3" fill="white"/>
+    
+    <rect x="370" y="85" width="50" height="20" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="385" y="96" font-family="Arial, sans-serif" font-size="9" fill="#374151">Settings</text>
+    
+    <!-- Action card -->
+    <rect x="0" y="130" width="550" height="40" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="10" y="138" width="530" height="24" rx="4" fill="#eff6ff"/>
+    <rect x="20" y="142" width="85" height="16" rx="3" fill="#3b82f6"/>
+    <text x="35" y="151" font-family="Arial, sans-serif" font-size="8" fill="white">+ New Binding</text>
+    <text x="115" y="151" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6">Add keyboard shortcut to Wounds group</text>
+    
+    <!-- Content card -->
+    <rect x="0" y="180" width="550" height="70" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="15" y="200" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#374151">Active Key Bindings</text>
+    <rect x="15" y="210" width="520" height="16" rx="2" fill="#f8fafc"/>
+    <text x="20" y="220" font-family="Arial, sans-serif" font-size="9" fill="#374151">Ctrl+Shift+W - Wound assessment template</text>
+    <rect x="15" y="230" width="520" height="16" rx="2" fill="#f8fafc"/>
+    <text x="20" y="240" font-family="Arial, sans-serif" font-size="9" fill="#374151">Ctrl+Alt+D - Dressing change documentation</text>
+    
+    <text x="15" y="270" font-family="Arial, sans-serif" font-size="10" fill="#059669">Pro: Clear visual separation, easy to scan</text>
+  </g>
+  
+  <!-- Design 4: Workflow-oriented -->
+  <g transform="translate(600, 340)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#059669">✅ Option 4: Workflow-Oriented</text>
+    
+    <!-- Header -->
+    <rect x="0" y="30" width="550" height="25" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="15" y="45" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#374151">Key Bindings Workspace</text>
+    
+    <!-- Step 1: Select Group -->
+    <rect x="0" y="65" width="550" height="35" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+    <text x="15" y="80" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#92400e">Step 1: Select or Create Group</text>
+    <rect x="15" y="85" width="130" height="18" rx="3" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="8" fill="#374151">Wounds (4 bindings)</text>
+    
+    <rect x="155" y="85" width="70" height="18" rx="3" fill="#f59e0b"/>
+    <text x="175" y="95" font-family="Arial, sans-serif" font-size="8" fill="white">+ New Group</text>
+    
+    <text x="240" y="91" font-family="Arial, sans-serif" font-size="8" fill="#92400e">Show inactive</text>
+    <rect x="300" y="88" width="18" height="9" rx="4" fill="#e2e8f0"/>
+    <circle cx="305" cy="92" r="3" fill="white"/>
+    
+    <!-- Step 2: Manage Bindings -->
+    <rect x="0" y="110" width="550" height="35" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+    <text x="15" y="125" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#15803d">Step 2: Manage Key Bindings</text>
+    <rect x="15" y="130" width="80" height="18" rx="3" fill="#16a34a"/>
+    <text x="30" y="140" font-family="Arial, sans-serif" font-size="8" fill="white">+ New Binding</text>
+    
+    <text x="110" y="136" font-family="Arial, sans-serif" font-size="8" fill="#15803d">Edit existing:</text>
+    <rect x="170" y="130" width="40" height="18" rx="3" fill="white" stroke="#16a34a" stroke-width="1"/>
+    <text x="180" y="140" font-family="Arial, sans-serif" font-size="8" fill="#15803d">Edit</text>
+    
+    <rect x="220" y="130" width="50" height="18" rx="3" fill="white" stroke="#16a34a" stroke-width="1"/>
+    <text x="233" y="140" font-family="Arial, sans-serif" font-size="8" fill="#15803d">Delete</text>
+    
+    <!-- Results -->
+    <rect x="0" y="155" width="550" height="60" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="15" y="175" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#374151">Current Bindings in "Wounds"</text>
+    <rect x="15" y="185" width="520" height="14" rx="2" fill="#f0f9ff"/>
+    <text x="20" y="194" font-family="Arial, sans-serif" font-size="8" fill="#1d4ed8">Ctrl+Shift+W</text>
+    <text x="90" y="194" font-family="Arial, sans-serif" font-size="8" fill="#374151">Wound assessment: {location} - {description}...</text>
+    
+    <rect x="15" y="202" width="520" height="14" rx="2" fill="#f8fafc"/>
+    <text x="20" y="211" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">Ctrl+Alt+D</text>
+    <text x="90" y="211" font-family="Arial, sans-serif" font-size="8" fill="#374151">Wound dressing changed. Previous...</text>
+    
+    <text x="15" y="235" font-family="Arial, sans-serif" font-size="10" fill="#059669">Pro: Guides user through workflow, educational</text>
+  </g>
+  
+  <!-- Design 5: Minimal with smart positioning -->
+  <g transform="translate(20, 620)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#059669">✅ Option 5: Minimal Smart Layout</text>
+    
+    <!-- Clean header -->
+    <rect x="0" y="30" width="550" height="25" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="15" y="45" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#374151">Key Bindings</text>
+    
+    <!-- Smart filter row -->
+    <rect x="0" y="65" width="550" height="30" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="15" y="80" font-family="Arial, sans-serif" font-size="9" fill="#6b7280">Group:</text>
+    <rect x="50" y="75" width="120" height="18" rx="3" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="55" y="85" font-family="Arial, sans-serif" font-size="8" fill="#374151">Wounds (4)</text>
+    
+    <!-- New Group immediately after -->
+    <rect x="180" y="75" width="55" height="18" rx="3" fill="#e2e8f0" stroke="#9ca3af" stroke-width="1"/>
+    <text x="195" y="85" font-family="Arial, sans-serif" font-size="8" fill="#374151">+ Group</text>
+    
+    <!-- Right side controls -->
+    <text x="350" y="81" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">Show inactive</text>
+    <rect x="410" y="78" width="20" height="10" rx="5" fill="#e2e8f0"/>
+    <circle cx="416" cy="83" r="3" fill="white"/>
+    
+    <rect x="440" y="75" width="35" height="18" rx="3" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="450" y="85" font-family="Arial, sans-serif" font-size="8" fill="#374151">⚙ Settings</text>
+    
+    <!-- Action bar -->
+    <rect x="0" y="105" width="550" height="25" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1"/>
+    <rect x="15" y="110" width="70" height="15" rx="3" fill="#3b82f6"/>
+    <text x="30" y="119" font-family="Arial, sans-serif" font-size="8" fill="white">+ New Binding</text>
+    <text x="95" y="119" font-family="Arial, sans-serif" font-size="8" fill="#3b82f6">Add to Wounds group</text>
+    
+    <!-- Content -->
+    <rect x="0" y="140" width="550" height="50" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="15" y="157" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#374151">4 bindings</text>
+    <rect x="15" y="165" width="520" height="12" rx="2" fill="#f8fafc"/>
+    <text x="20" y="173" font-family="Arial, sans-serif" font-size="8" fill="#374151">Ctrl+Shift+W, Ctrl+Alt+D, Ctrl+Shift+H, Ctrl+Alt+C</text>
+    
+    <text x="15" y="210" font-family="Arial, sans-serif" font-size="10" fill="#059669">Pro: Ultra-compact, intuitive flow, minimal visual noise</text>
+  </g>
+  
+  <!-- Recommendation -->
+  <g transform="translate(600, 620)">
+    <rect x="0" y="0" width="550" height="120" fill="#f0fdf4" rx="8" stroke="#16a34a" stroke-width="1"/>
+    <text x="20" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#15803d">💡 Best Options for Your Request</text>
+    
+    <text x="20" y="45" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#166534">Option 1: Sequential Layout</text>
+    <text x="20" y="60" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+      • New Group button right after dropdown (as requested)
+    </text>
+    <text x="20" y="75" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+      • New Binding in separate section above list (as requested)
+    </text>
+    
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#166534">Option 5: Minimal Smart Layout</text>
+    <text x="20" y="110" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+      • Same positioning but more compact and elegant
+    </text>
+  </g>
+</svg>

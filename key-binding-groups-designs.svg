@@ -1,0 +1,250 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="20" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">Key Binding Groups - Design Alternatives</text>
+  
+  <!-- Design 1: Compact Dropdown -->
+  <g transform="translate(20, 60)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">Option 1: Dropdown Selector</text>
+    
+    <!-- Main container -->
+    <rect x="0" y="30" width="350" height="180" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Header -->
+    <rect x="12" y="42" width="326" height="40" rx="6" fill="#f1f5f9"/>
+    <text x="20" y="60" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#475569">Active Group</text>
+    
+    <!-- Dropdown -->
+    <rect x="20" y="95" width="310" height="36" rx="6" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="28" y="115" font-family="Arial, sans-serif" font-size="13" fill="#374151">Wounds (8 bindings)</text>
+    <polygon points="315,108 320,115 310,115" fill="#6b7280"/>
+    
+    <!-- Quick actions -->
+    <rect x="20" y="145" width="70" height="28" rx="4" fill="#3b82f6" stroke="none"/>
+    <text x="32" y="162" font-family="Arial, sans-serif" font-size="11" fill="white">+ New</text>
+    
+    <rect x="100" y="145" width="60" height="28" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="115" y="162" font-family="Arial, sans-serif" font-size="11" fill="#374151">Edit</text>
+    
+    <rect x="170" y="145" width="70" height="28" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="180" y="162" font-family="Arial, sans-serif" font-size="11" fill="#374151">Manage</text>
+  </g>
+  
+  <!-- Design 2: Tab-style with overflow -->
+  <g transform="translate(390, 60)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">Option 2: Horizontal Tabs</text>
+    
+    <!-- Main container -->
+    <rect x="0" y="30" width="350" height="180" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Tab container -->
+    <rect x="12" y="42" width="326" height="40" rx="6" fill="#f8fafc"/>
+    
+    <!-- Visible tabs -->
+    <rect x="20" y="50" width="60" height="24" rx="4" fill="#3b82f6"/>
+    <text x="35" y="64" font-family="Arial, sans-serif" font-size="10" fill="white">Wounds</text>
+    
+    <rect x="85" y="50" width="70" height="24" rx="4" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="105" y="64" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Medications</text>
+    
+    <rect x="160" y="50" width="60" height="24" rx="4" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="175" y="64" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Dementia</text>
+    
+    <!-- More indicator -->
+    <rect x="225" y="50" width="40" height="24" rx="4" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="235" y="64" font-family="Arial, sans-serif" font-size="10" fill="#64748b">+9 more</text>
+    
+    <!-- Content area -->
+    <rect x="20" y="95" width="310" height="100" rx="4" fill="#f8fafc"/>
+    <text x="28" y="115" font-family="Arial, sans-serif" font-size="12" fill="#475569">Wounds Group (8 bindings)</text>
+    <text x="28" y="135" font-family="Arial, sans-serif" font-size="11" fill="#64748b">Key bindings for wound documentation</text>
+    
+    <!-- Action buttons -->
+    <circle cx="300" cy="105" r="12" fill="#3b82f6"/>
+    <text x="296" y="109" font-family="Arial, sans-serif" font-size="10" fill="white">+</text>
+  </g>
+  
+  <!-- Design 3: Sidebar with search -->
+  <g transform="translate(760, 60)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">Option 3: Collapsible Sidebar</text>
+    
+    <!-- Sidebar container -->
+    <rect x="0" y="30" width="120" height="180" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Search box -->
+    <rect x="8" y="38" width="104" height="28" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="12" y="54" font-family="Arial, sans-serif" font-size="10" fill="#9ca3af">Search groups...</text>
+    
+    <!-- Group list (scrollable) -->
+    <!-- Active group -->
+    <rect x="8" y="72" width="104" height="24" rx="4" fill="#eff6ff"/>
+    <rect x="10" y="74" width="2" height="20" fill="#3b82f6"/>
+    <text x="16" y="86" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#1d4ed8">Wounds</text>
+    <text x="85" y="86" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">8</text>
+    
+    <!-- Other groups -->
+    <rect x="8" y="100" width="104" height="20" rx="2" fill="transparent"/>
+    <text x="16" y="112" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Medications</text>
+    <text x="90" y="112" font-family="Arial, sans-serif" font-size="8" fill="#9ca3af">12</text>
+    
+    <rect x="8" y="122" width="104" height="20" rx="2" fill="transparent"/>
+    <text x="16" y="134" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Dementia</text>
+    <text x="95" y="134" font-family="Arial, sans-serif" font-size="8" fill="#9ca3af">6</text>
+    
+    <rect x="8" y="144" width="104" height="20" rx="2" fill="transparent"/>
+    <text x="16" y="156" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Cardiology</text>
+    <text x="90" y="156" font-family="Arial, sans-serif" font-size="8" fill="#9ca3af">15</text>
+    
+    <!-- Scroll indicator -->
+    <rect x="108" y="170" width="2" height="30" rx="1" fill="#e2e8f0"/>
+    <rect x="108" y="175" width="2" height="15" rx="1" fill="#94a3b8"/>
+    
+    <!-- Main content area -->
+    <rect x="130" y="30" width="280" height="180" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="140" y="55" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#1e293b">Wounds Group</text>
+    <text x="140" y="75" font-family="Arial, sans-serif" font-size="11" fill="#64748b">8 key bindings • Last updated 2 hours ago</text>
+    
+    <!-- Toggle button -->
+    <rect x="5" y="215" width="20" height="20" rx="4" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="12" y="227" font-family="Arial, sans-serif" font-size="10" fill="#64748b">‹</text>
+  </g>
+  
+  <!-- Design 4: Grid cards -->
+  <g transform="translate(20, 280)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">Option 4: Compact Grid Cards</text>
+    
+    <!-- Container -->
+    <rect x="0" y="30" width="550" height="200" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Header with view toggle -->
+    <rect x="12" y="42" width="526" height="36" rx="6" fill="#f8fafc"/>
+    <text x="20" y="60" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#475569">Groups (12)</text>
+    
+    <!-- View toggle -->
+    <rect x="450" y="48" width="80" height="24" rx="12" fill="#e2e8f0"/>
+    <rect x="452" y="50" width="36" height="20" rx="10" fill="#3b82f6"/>
+    <text x="460" y="62" font-family="Arial, sans-serif" font-size="9" fill="white">Grid</text>
+    <text x="495" y="62" font-family="Arial, sans-serif" font-size="9" fill="#64748b">List</text>
+    
+    <!-- Grid of cards -->
+    <!-- Row 1 -->
+    <!-- Active card -->
+    <rect x="20" y="90" width="120" height="60" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+    <text x="28" y="108" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#1d4ed8">Wounds</text>
+    <text x="28" y="122" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6">8 bindings</text>
+    <circle cx="125" cy="100" r="6" fill="#10b981"/>
+    
+    <rect x="150" y="90" width="120" height="60" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="158" y="108" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#374151">Medications</text>
+    <text x="158" y="122" font-family="Arial, sans-serif" font-size="9" fill="#6b7280">12 bindings</text>
+    <circle cx="255" cy="100" r="6" fill="#6b7280"/>
+    
+    <rect x="280" y="90" width="120" height="60" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="288" y="108" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#374151">Dementia</text>
+    <text x="288" y="122" font-family="Arial, sans-serif" font-size="9" fill="#6b7280">6 bindings</text>
+    <circle cx="385" cy="100" r="6" fill="#6b7280"/>
+    
+    <rect x="410" y="90" width="120" height="60" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="418" y="108" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#374151">Cardiology</text>
+    <text x="418" y="122" font-family="Arial, sans-serif" font-size="9" fill="#6b7280">15 bindings</text>
+    <circle cx="515" cy="100" r="6" fill="#6b7280"/>
+    
+    <!-- Row 2 -->
+    <rect x="20" y="160" width="120" height="60" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="28" y="178" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#374151">Neurology</text>
+    <text x="28" y="192" font-family="Arial, sans-serif" font-size="9" fill="#6b7280">9 bindings</text>
+    
+    <rect x="150" y="160" width="120" height="60" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="158" y="178" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#374151">Pediatric</text>
+    <text x="158" y="192" font-family="Arial, sans-serif" font-size="9" fill="#6b7280">7 bindings</text>
+    
+    <!-- Show more indicator -->
+    <rect x="280" y="160" width="120" height="60" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="315" y="185" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">+6 more</text>
+    <text x="325" y="200" font-family="Arial, sans-serif" font-size="9" fill="#9ca3af">View all</text>
+  </g>
+  
+  <!-- Design 5: Accordion style -->
+  <g transform="translate(590, 280)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">Option 5: Accordion Menu</text>
+    
+    <!-- Container -->
+    <rect x="0" y="30" width="300" height="200" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Expanded section -->
+    <rect x="12" y="42" width="276" height="32" rx="6" fill="#eff6ff"/>
+    <polygon points="20,52 25,58 20,64" fill="#3b82f6"/>
+    <text x="32" y="60" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#1d4ed8">Wounds (8)</text>
+    <circle cx="270" cy="58" r="8" fill="#10b981"/>
+    
+    <!-- Sub-items -->
+    <rect x="20" y="78" width="268" height="20" rx="4" fill="#f0f9ff"/>
+    <text x="40" y="90" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">Assessment bindings (3)</text>
+    
+    <rect x="20" y="102" width="268" height="20" rx="4" fill="#f0f9ff"/>
+    <text x="40" y="114" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">Treatment bindings (3)</text>
+    
+    <rect x="20" y="126" width="268" height="20" rx="4" fill="#f0f9ff"/>
+    <text x="40" y="138" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">Progress bindings (2)</text>
+    
+    <!-- Collapsed sections -->
+    <rect x="12" y="154" width="276" height="28" rx="6" fill="#f8fafc"/>
+    <polygon points="20,164 23,170 20,176" fill="#6b7280"/>
+    <text x="32" y="170" font-family="Arial, sans-serif" font-size="11" fill="#374151">Medications (12)</text>
+    
+    <rect x="12" y="186" width="276" height="28" rx="6" fill="#f8fafc"/>
+    <polygon points="20,196 23,202 20,208" fill="#6b7280"/>
+    <text x="32" y="202" font-family="Arial, sans-serif" font-size="11" fill="#374151">Dementia (6)</text>
+  </g>
+  
+  <!-- Pros/Cons comparison -->
+  <g transform="translate(20, 520)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b">Comparison</text>
+    
+    <!-- Table header -->
+    <rect x="0" y="35" width="1160" height="30" fill="#f1f5f9"/>
+    <text x="10" y="52" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#374151">Design</text>
+    <text x="200" y="52" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#374151">Best For</text>
+    <text x="450" y="52" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#374151">Pros</text>
+    <text x="750" y="52" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#374151">Cons</text>
+    
+    <!-- Rows -->
+    <rect x="0" y="65" width="1160" height="35" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="10" y="82" font-family="Arial, sans-serif" font-size="11" fill="#374151">Dropdown</text>
+    <text x="200" y="82" font-family="Arial, sans-serif" font-size="11" fill="#374151">Many groups, minimal space</text>
+    <text x="450" y="82" font-family="Arial, sans-serif" font-size="11" fill="#374151">Very compact, familiar UI</text>
+    <text x="750" y="82" font-family="Arial, sans-serif" font-size="11" fill="#374151">Hidden groups, extra clicks</text>
+    
+    <rect x="0" y="100" width="1160" height="35" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="10" y="117" font-family="Arial, sans-serif" font-size="11" fill="#374151">Horizontal Tabs</text>
+    <text x="200" y="117" font-family="Arial, sans-serif" font-size="11" fill="#374151">Quick switching, visual</text>
+    <text x="450" y="117" font-family="Arial, sans-serif" font-size="11" fill="#374151">Fast access, clear selection</text>
+    <text x="750" y="117" font-family="Arial, sans-serif" font-size="11" fill="#374151">Overflow handling needed</text>
+    
+    <rect x="0" y="135" width="1160" height="35" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="10" y="152" font-family="Arial, sans-serif" font-size="11" fill="#374151">Sidebar</text>
+    <text x="200" y="152" font-family="Arial, sans-serif" font-size="11" fill="#374151">Power users, many groups</text>
+    <text x="450" y="152" font-family="Arial, sans-serif" font-size="11" fill="#374151">Searchable, always visible</text>
+    <text x="750" y="152" font-family="Arial, sans-serif" font-size="11" fill="#374151">Takes horizontal space</text>
+    
+    <rect x="0" y="170" width="1160" height="35" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="10" y="187" font-family="Arial, sans-serif" font-size="11" fill="#374151">Grid Cards</text>
+    <text x="200" y="187" font-family="Arial, sans-serif" font-size="11" fill="#374151">Visual overview, medium count</text>
+    <text x="450" y="187" font-family="Arial, sans-serif" font-size="11" fill="#374151">Quick overview, touch-friendly</text>
+    <text x="750" y="187" font-family="Arial, sans-serif" font-size="11" fill="#374151">Takes vertical space</text>
+    
+    <rect x="0" y="205" width="1160" height="35" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="10" y="222" font-family="Arial, sans-serif" font-size="11" fill="#374151">Accordion</text>
+    <text x="200" y="222" font-family="Arial, sans-serif" font-size="11" fill="#374151">Hierarchical organization</text>
+    <text x="450" y="222" font-family="Arial, sans-serif" font-size="11" fill="#374151">Shows structure, expandable</text>
+    <text x="750" y="222" font-family="Arial, sans-serif" font-size="11" fill="#374151">Complex interaction model</text>
+  </g>
+  
+  <!-- Recommendation -->
+  <g transform="translate(20, 770)">
+    <rect x="0" y="0" width="1160" height="25" fill="#dcfce7" rx="4"/>
+    <text x="10" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#166534">💡 Recommendation: For 12+ groups, use the Collapsible Sidebar (Option 3) with search functionality</text>
+  </g>
+</svg>

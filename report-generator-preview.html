@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Generator - ClickDoc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-teal': '#0891b2',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <div class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-6">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gray-900">ClickDoc</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="text-sm text-gray-600">Dr. Sarah Johnson</div>
+                    <div class="w-8 h-8 bg-purple-600 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+        <!-- Breadcrumb -->
+        <nav class="flex text-sm text-gray-600">
+            <a href="#" class="hover:text-gray-800">Tools</a>
+            <span class="mx-2">/</span>
+            <span class="text-gray-800 font-medium">Report Generator</span>
+        </nav>
+
+        <!-- Page Header -->
+        <div class="flex items-center justify-between">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900 mb-2 flex items-center gap-3">
+                    <i data-lucide="bar-chart-2" class="w-8 h-8 text-purple-600"></i>
+                    Report Generator
+                    <i data-lucide="crown" class="w-6 h-6 text-purple-600"></i>
+                </h1>
+                <p class="text-gray-600">Advanced AI-powered medical reporting and analytics platform</p>
+            </div>
+            
+            <div class="bg-purple-50 text-purple-700 border border-purple-200 px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
+                <i data-lucide="crown" class="w-3 h-3"></i>
+                Platinum Exclusive
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Configuration Panel -->
+            <div class="lg:col-span-2 space-y-6">
+                <div class="bg-white border rounded-lg shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
+                            <i data-lucide="settings" class="w-5 h-5"></i>
+                            Report Configuration
+                        </h3>
+                        <p class="text-gray-600 mt-1">Configure your report parameters and data sources</p>
+                    </div>
+                    <div class="p-6">
+                        <!-- Tab Navigation -->
+                        <div class="flex border-b border-gray-200 mb-6">
+                            <button class="px-4 py-2 border-b-2 border-purple-600 text-purple-600 font-medium">Basic Settings</button>
+                            <button class="px-4 py-2 text-gray-500 hover:text-gray-700 ml-6">Data Sources</button>
+                            <button class="px-4 py-2 text-gray-500 hover:text-gray-700 ml-6">Output Options</button>
+                        </div>
+                        
+                        <!-- Basic Settings Tab -->
+                        <div class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="space-y-2">
+                                    <label class="text-sm font-medium text-gray-700">Report Name</label>
+                                    <input type="text" placeholder="Enter report name" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                                </div>
+                                
+                                <div class="space-y-2">
+                                    <label class="text-sm font-medium text-gray-700">Report Type</label>
+                                    <select class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                                        <option>Select report type</option>
+                                        <option>User Activity Report</option>
+                                        <option>Compliance Report</option>
+                                        <option>Analytics Report</option>
+                                        <option>Custom Report</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700">Description</label>
+                                <textarea placeholder="Describe the purpose of this report" rows="3" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"></textarea>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="space-y-2">
+                                    <label class="text-sm font-medium text-gray-700">Date Range</label>
+                                    <select class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                                        <option>Last 30 Days</option>
+                                        <option>Last 7 Days</option>
+                                        <option>Last 90 Days</option>
+                                        <option>Last Year</option>
+                                        <option>Custom Range</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="space-y-2">
+                                    <label class="text-sm font-medium text-gray-700">Output Format</label>
+                                    <select class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                                        <option>PDF</option>
+                                        <option>Excel</option>
+                                        <option>CSV</option>
+                                        <option>JSON</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actions Panel -->
+            <div class="space-y-6">
+                <div class="bg-white border rounded-lg shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
+                            <i data-lucide="play" class="w-5 h-5"></i>
+                            Generate Report
+                        </h3>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <button class="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-md flex items-center justify-center gap-2">
+                            <i data-lucide="bar-chart-2" class="w-4 h-4"></i>
+                            Generate Report
+                        </button>
+                        
+                        <button class="w-full border border-gray-300 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-50 flex items-center justify-center gap-2">
+                            <i data-lucide="save" class="w-4 h-4"></i>
+                            Save as Template
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white border rounded-lg shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
+                            <i data-lucide="target" class="w-5 h-5"></i>
+                            Quick Stats
+                        </h3>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Active Users:</span>
+                            <span class="font-semibold">2,847</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Reports Generated:</span>
+                            <span class="font-semibold">156</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Data Sources:</span>
+                            <span class="font-semibold">12</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Last Updated:</span>
+                            <span class="font-semibold">2 min ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border rounded-lg shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
+                            <i data-lucide="file-text" class="w-5 h-5"></i>
+                            Recent Reports
+                        </h3>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="space-y-2">
+                            <div class="p-2 border rounded text-sm">
+                                <div class="font-medium">Monthly User Activity</div>
+                                <div class="text-gray-500">Generated 2 hours ago</div>
+                            </div>
+                            <div class="p-2 border rounded text-sm">
+                                <div class="font-medium">Compliance Audit Q1</div>
+                                <div class="text-gray-500">Generated yesterday</div>
+                            </div>
+                            <div class="p-2 border rounded text-sm">
+                                <div class="font-medium">System Performance</div>
+                                <div class="text-gray-500">Generated 3 days ago</div>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full border border-gray-300 text-gray-700 py-2 px-3 rounded-md hover:bg-gray-50 text-sm flex items-center justify-center gap-2">
+                            <i data-lucide="file-text" class="w-4 h-4"></i>
+                            View All Reports
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Sources Configuration -->
+        <div class="bg-white border rounded-lg shadow-sm">
+            <div class="p-6 border-b border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
+                    <i data-lucide="activity" class="w-5 h-5"></i>
+                    Data Sources & Filters
+                </h3>
+            </div>
+            <div class="p-6">
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+                    <div class="flex">
+                        <i data-lucide="activity" class="h-5 w-5 text-blue-600"></i>
+                        <div class="ml-3">
+                            <p class="text-blue-800 text-sm">
+                                Select the data sources and metrics to include in your report. 
+                                Data will be filtered based on your selected date range and access permissions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="font-medium text-gray-900">Data Sources</h4>
+                        <div class="grid grid-cols-2 gap-3">
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" checked class="rounded border-gray-300 text-purple-600 focus:ring-purple-500">
+                                <span class="text-sm">User Activity Data</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" checked class="rounded border-gray-300 text-purple-600 focus:ring-purple-500">
+                                <span class="text-sm">System Logs</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500">
+                                <span class="text-sm">Security Events</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" checked class="rounded border-gray-300 text-purple-600 focus:ring-purple-500">
+                                <span class="text-sm">Performance Metrics</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h4 class="font-medium text-gray-900">Content Filters</h4>
+                        <div class="space-y-2">
+                            <input type="text" placeholder="Filter by user role (e.g., admin, user)" class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                            <input type="text" placeholder="Filter by department or organization" class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                            <input type="text" placeholder="Filter by specific actions or events" class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Output Options -->
+        <div class="bg-white border rounded-lg shadow-sm">
+            <div class="p-6 border-b border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-900">Output Configuration</h3>
+            </div>
+            <div class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="font-medium text-gray-900">Report Components</h4>
+                        <div class="space-y-3">
+                            <label class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-purple-600 focus:ring-purple-500">
+                                    <span class="text-sm">Include Charts and Visualizations</span>
+                                </div>
+                            </label>
+                            
+                            <label class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-purple-600 focus:ring-purple-500">
+                                    <span class="text-sm">Include Key Metrics Summary</span>
+                                </div>
+                            </label>
+                            
+                            <label class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-purple-600 focus:ring-purple-500">
+                                    <span class="text-sm">Include Trend Analysis</span>
+                                </div>
+                            </label>
+                            
+                            <label class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500">
+                                    <span class="text-sm">Include Period Comparisons</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h4 class="font-medium text-gray-900">Distribution</h4>
+                        <div class="space-y-3">
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700">Email Recipients (comma-separated)</label>
+                                <input type="text" placeholder="email@example.com, team@example.com" class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700">Schedule</label>
+                                <select class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                                    <option>Manual Generation</option>
+                                    <option>Daily</option>
+                                    <option>Weekly</option>
+                                    <option>Monthly</option>
+                                    <option>Quarterly</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickDoc - Vitals Generator (Platinum)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        :root {
+            --medical-teal: #0d9488;
+            --medical-blue: #0ea5e9;
+            --medical-purple: #8b5cf6;
+        }
+        .bg-medical-teal { background-color: var(--medical-teal); }
+        .text-medical-teal { color: var(--medical-teal); }
+        .border-medical-teal { border-color: var(--medical-teal); }
+        .tier-badge {
+            background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
+        }
+        
+        /* Dual range slider styles */
+        .range-slider {
+            position: relative;
+            height: 8px;
+            background: #e5e7eb;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        
+        .range-slider .range-track {
+            position: absolute;
+            height: 8px;
+            background: linear-gradient(135deg, #8b5cf6 0%, #9333ea 100%);
+            border-radius: 4px;
+        }
+        
+        .range-slider input[type="range"] {
+            position: absolute;
+            width: 100%;
+            height: 8px;
+            background: transparent;
+            appearance: none;
+            pointer-events: none;
+            border-radius: 4px;
+        }
+        
+        .range-slider input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #8b5cf6;
+            border: 3px solid white;
+            border-radius: 50%;
+            cursor: pointer;
+            pointer-events: all;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+        
+        .range-slider input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background: #8b5cf6;
+            border: 3px solid white;
+            border-radius: 50%;
+            cursor: pointer;
+            pointer-events: all;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-60 bg-white shadow-sm border-r border-gray-200 flex flex-col">
+            <!-- Logo Section -->
+            <div class="p-6 border-b border-gray-200">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-medical-teal rounded-lg flex items-center justify-center">
+                        <i data-lucide="file-text" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">MedFlowPro</span>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="flex-1 p-4 space-y-1">
+                <button class="w-full flex items-center px-3 py-2 text-gray-700 rounded-md hover:bg-gray-100">
+                    <i data-lucide="layout-dashboard" class="w-5 h-5 mr-3"></i>
+                    Dashboard
+                </button>
+                <button class="w-full flex items-center px-3 py-2 text-white bg-medical-teal rounded-md">
+                    <i data-lucide="wrench" class="w-5 h-5 mr-3"></i>
+                    Tools
+                </button>
+                <button class="w-full flex items-center px-3 py-2 text-gray-700 rounded-md hover:bg-gray-100">
+                    <i data-lucide="credit-card" class="w-5 h-5 mr-3"></i>
+                    Membership
+                </button>
+                <button class="w-full flex items-center px-3 py-2 text-gray-700 rounded-md hover:bg-gray-100">
+                    <i data-lucide="settings" class="w-5 h-5 mr-3"></i>
+                    Settings
+                </button>
+            </nav>
+
+            <!-- User Tier Status -->
+            <div class="p-4 border-t border-gray-200">
+                <div class="space-y-3">
+                    <!-- Tier Badge -->
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="crown" class="w-4 h-4 text-purple-600"></i>
+                            <span class="text-xs border border-purple-200 text-purple-700 bg-purple-50 px-2 py-1 rounded">PLATINUM</span>
+                        </div>
+                        <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Active</span>
+                    </div>
+
+                    <!-- Expiration Date -->
+                    <div class="text-xs text-gray-500">
+                        <p>Expires: Dec 31, 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logout Button -->
+            <div class="p-4 border-t border-gray-200">
+                <button class="w-full flex items-center px-3 py-2 text-red-600 rounded-md hover:bg-red-50">
+                    <i data-lucide="log-out" class="w-5 h-5 mr-3"></i>
+                    Logout
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-auto">
+            <!-- Header -->
+            <div class="bg-white border-b border-gray-200 px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-900">AI Vitals Generator</h1>
+                        <p class="text-gray-600 mt-1">Generate realistic vital signs for medical documentation</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="tier-badge text-white text-sm px-3 py-1 rounded-full font-medium">
+                            Platinum Feature
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6">
+                <div class="max-w-6xl mx-auto">
+                    <!-- Category Management Section -->
+                    <div class="bg-white rounded-lg shadow-sm border mb-6">
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-lg font-semibold text-gray-900 flex items-center space-x-2">
+                                    <i data-lucide="folder" class="w-5 h-5"></i>
+                                    <span>Vitals Categories</span>
+                                </h2>
+                                <button class="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 flex items-center space-x-2">
+                                    <i data-lucide="plus" class="w-4 h-4"></i>
+                                    <span>Create Category</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="flex items-center space-x-4">
+                                <label class="text-sm font-medium text-gray-700">Active Category:</label>
+                                <select class="px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                                    <option selected>Geriatric (Default)</option>
+                                    <option>Pediatric</option>
+                                    <option>Teen</option>
+                                    <option>Middle Adult</option>
+                                    <option>CHF</option>
+                                    <option>Diabetes</option>
+                                    <option>COPD</option>
+                                    <option>Post-Op</option>
+                                    <option>Infection</option>
+                                    <option>A. Fib</option>
+                                </select>
+                                <button class="text-purple-600 hover:text-purple-800 text-sm font-medium">
+                                    Edit Category Ranges
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vitals Generation Panel -->
+                    <div class="bg-white rounded-lg shadow-sm border">
+                        <div class="p-6 border-b border-gray-200">
+                            <h2 class="text-lg font-semibold text-gray-900 flex items-center space-x-2">
+                                <i data-lucide="activity" class="w-5 h-5"></i>
+                                <span>Generate Vitals</span>
+                            </h2>
+                        </div>
+                        
+                        <div class="p-6">
+                            <!-- Vital Signs Range Configuration -->
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                                <!-- Primary Vitals -->
+                                <div class="space-y-6">
+                                    <h3 class="font-medium text-gray-900 border-b pb-2">Primary Vitals</h3>
+                                    
+                                    <!-- Systolic Blood Pressure -->
+                                    <div>
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Systolic Blood Pressure (90-160 mmHg)</label>
+                                        <div class="px-3 py-2">
+                                            <div class="range-slider">
+                                                <div class="range-track" id="sys-track"></div>
+                                                <input type="range" id="sys-min" min="90" max="160" value="100" step="5">
+                                                <input type="range" id="sys-max" min="90" max="160" value="140" step="5">
+                                            </div>
+                                            <div class="flex justify-between text-sm text-gray-500 mt-2">
+                                                <span id="sys-min-val">100 mmHg</span>
+                                                <span id="sys-max-val">140 mmHg</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Diastolic Blood Pressure -->
+                                    <div>
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Diastolic Blood Pressure (60-90 mmHg)</label>
+                                        <div class="px-3 py-2">
+                                            <div class="range-slider">
+                                                <div class="range-track" id="dia-track"></div>
+                                                <input type="range" id="dia-min" min="60" max="90" value="65" step="5">
+                                                <input type="range" id="dia-max" min="60" max="90" value="85" step="5">
+                                            </div>
+                                            <div class="flex justify-between text-sm text-gray-500 mt-2">
+                                                <span id="dia-min-val">65 mmHg</span>
+                                                <span id="dia-max-val">85 mmHg</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Heart Rate -->
+                                    <div>
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Heart Rate (60-100 bpm)</label>
+                                        <div class="px-3 py-2">
+                                            <div class="range-slider">
+                                                <div class="range-track" id="hr-track"></div>
+                                                <input type="range" id="hr-min" min="60" max="100" value="70" step="5">
+                                                <input type="range" id="hr-max" min="60" max="100" value="90" step="5">
+                                            </div>
+                                            <div class="flex justify-between text-sm text-gray-500 mt-2">
+                                                <span id="hr-min-val">70 bpm</span>
+                                                <span id="hr-max-val">90 bpm</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Respiratory Rate -->
+                                    <div>
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Respiratory Rate (12-20 /min)</label>
+                                        <div class="px-3 py-2">
+                                            <div class="range-slider">
+                                                <div class="range-track" id="rr-track"></div>
+                                                <input type="range" id="rr-min" min="12" max="20" value="14" step="1">
+                                                <input type="range" id="rr-max" min="12" max="20" value="20" step="1">
+                                            </div>
+                                            <div class="flex justify-between text-sm text-gray-500 mt-2">
+                                                <span id="rr-min-val">14 /min</span>
+                                                <span id="rr-max-val">20 /min</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Secondary Vitals -->
+                                <div class="space-y-6">
+                                    <h3 class="font-medium text-gray-900 border-b pb-2">Secondary Vitals</h3>
+                                    
+                                    <!-- Temperature -->
+                                    <div>
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Temperature (96-101°F)</label>
+                                        <div class="px-3 py-2">
+                                            <div class="range-slider">
+                                                <div class="range-track" id="temp-track"></div>
+                                                <input type="range" id="temp-min" min="96" max="101" value="97" step="0.5">
+                                                <input type="range" id="temp-max" min="96" max="101" value="100" step="0.5">
+                                            </div>
+                                            <div class="flex justify-between text-sm text-gray-500 mt-2">
+                                                <span id="temp-min-val">97°F</span>
+                                                <span id="temp-max-val">100°F</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Oxygen Saturation -->
+                                    <div>
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Oxygen Saturation (95-100%)</label>
+                                        <div class="px-3 py-2">
+                                            <div class="range-slider">
+                                                <div class="range-track" id="spo2-track"></div>
+                                                <input type="range" id="spo2-min" min="95" max="100" value="95" step="1">
+                                                <input type="range" id="spo2-max" min="95" max="100" value="100" step="1">
+                                            </div>
+                                            <div class="flex justify-between text-sm text-gray-500 mt-2">
+                                                <span id="spo2-min-val">95%</span>
+                                                <span id="spo2-max-val">100%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Pain Scale -->
+                                    <div>
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Pain Scale (0-10)</label>
+                                        <div class="px-3 py-2">
+                                            <div class="range-slider">
+                                                <div class="range-track" id="pain-track"></div>
+                                                <input type="range" id="pain-min" min="0" max="10" value="0" step="1">
+                                                <input type="range" id="pain-max" min="0" max="10" value="5" step="1">
+                                            </div>
+                                            <div class="flex justify-between text-sm text-gray-500 mt-2">
+                                                <span id="pain-min-val">0</span>
+                                                <span id="pain-max-val">5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Blood Glucose -->
+                                    <div>
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Blood Glucose (70-140 mg/dL)</label>
+                                        <div class="px-3 py-2">
+                                            <div class="range-slider">
+                                                <div class="range-track" id="glucose-track"></div>
+                                                <input type="range" id="glucose-min" min="70" max="140" value="80" step="5">
+                                                <input type="range" id="glucose-max" min="70" max="140" value="120" step="5">
+                                            </div>
+                                            <div class="flex justify-between text-sm text-gray-500 mt-2">
+                                                <span id="glucose-min-val">80 mg/dL</span>
+                                                <span id="glucose-max-val">120 mg/dL</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Save Settings -->
+                            <div class="mt-8 pt-6 border-t border-gray-200">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-900">Chrome Extension Settings</h3>
+                                        <p class="text-sm text-gray-600 mt-1">These ranges will be used by your Chrome extension for automated vital sign generation</p>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 flex items-center space-x-2">
+                                            <i data-lucide="refresh-cw" class="w-4 h-4"></i>
+                                            <span>Reset to Defaults</span>
+                                        </button>
+                                        <button class="px-6 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 flex items-center space-x-2">
+                                            <i data-lucide="save" class="w-4 h-4"></i>
+                                            <span>Save Settings</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Dual range slider functionality
+        const rangeSliders = [
+            { prefix: 'sys', unit: 'mmHg', min: 90, max: 160, step: 5 },
+            { prefix: 'dia', unit: 'mmHg', min: 60, max: 90, step: 5 },
+            { prefix: 'hr', unit: 'bpm', min: 60, max: 100, step: 5 },
+            { prefix: 'rr', unit: '/min', min: 12, max: 20, step: 1 },
+            { prefix: 'temp', unit: '°F', min: 96, max: 101, step: 0.5 },
+            { prefix: 'spo2', unit: '%', min: 95, max: 100, step: 1 },
+            { prefix: 'pain', unit: '', min: 0, max: 10, step: 1 },
+            { prefix: 'glucose', unit: 'mg/dL', min: 70, max: 140, step: 5 }
+        ];
+
+        rangeSliders.forEach(({ prefix, unit, min, max, step }) => {
+            const minSlider = document.getElementById(`${prefix}-min`);
+            const maxSlider = document.getElementById(`${prefix}-max`);
+            const minValue = document.getElementById(`${prefix}-min-val`);
+            const maxValue = document.getElementById(`${prefix}-max-val`);
+            const track = document.getElementById(`${prefix}-track`);
+            
+            function updateValues() {
+                let minVal = parseFloat(minSlider.value);
+                let maxVal = parseFloat(maxSlider.value);
+                
+                // Ensure min doesn't exceed max
+                if (minVal > maxVal) {
+                    minVal = maxVal;
+                    minSlider.value = minVal;
+                }
+                
+                // Calculate percentage positions
+                const minPercent = ((minVal - min) / (max - min)) * 100;
+                const maxPercent = ((maxVal - min) / (max - min)) * 100;
+                
+                // Update the filled track
+                track.style.left = minPercent + '%';
+                track.style.width = (maxPercent - minPercent) + '%';
+                
+                // Update display values
+                const minDisplay = step < 1 ? minVal.toFixed(1) : minVal.toString();
+                const maxDisplay = step < 1 ? maxVal.toFixed(1) : maxVal.toString();
+                minValue.textContent = `${minDisplay}${unit ? ' ' + unit : ''}`;
+                maxValue.textContent = `${maxDisplay}${unit ? ' ' + unit : ''}`;
+            }
+            
+            minSlider.addEventListener('input', updateValues);
+            maxSlider.addEventListener('input', updateValues);
+            
+            // Initialize values
+            updateValues();
+        });
+
+        // Category management
+        document.addEventListener('DOMContentLoaded', function() {
+            // Category cards click handlers
+            const categoryCards = document.querySelectorAll('[class*="border-purple-200"], [class*="border-gray-200"]');
+            categoryCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Remove active state from all cards
+                    categoryCards.forEach(c => {
+                        c.classList.remove('border-purple-200', 'bg-purple-50');
+                        c.classList.add('border-gray-200', 'bg-white');
+                    });
+                    
+                    // Add active state to clicked card
+                    this.classList.remove('border-gray-200', 'bg-white');
+                    this.classList.add('border-purple-200', 'bg-purple-50');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

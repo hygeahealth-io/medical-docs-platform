@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickDoc - Platinum Member Tools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        :root {
+            --medical-teal: #0d9488;
+            --medical-blue: #0ea5e9;
+            --medical-purple: #8b5cf6;
+        }
+        .bg-medical-teal { background-color: var(--medical-teal); }
+        .text-medical-teal { color: var(--medical-teal); }
+        .border-medical-teal { border-color: var(--medical-teal); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar -->
+        <aside class="w-60 bg-white shadow-sm border-r border-gray-200 flex flex-col">
+            <!-- Logo Section -->
+            <div class="p-6 border-b border-gray-200">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-medical-teal rounded-lg flex items-center justify-center">
+                        <i data-lucide="file-text" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">ClickDoc</span>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="flex-1 p-4 space-y-1">
+                <button class="w-full flex items-center px-3 py-2 text-gray-700 rounded-md hover:bg-gray-100">
+                    <i data-lucide="layout-dashboard" class="w-5 h-5 mr-3"></i>
+                    Dashboard
+                </button>
+                <button class="w-full flex items-center px-3 py-2 text-white bg-medical-teal rounded-md">
+                    <i data-lucide="wrench" class="w-5 h-5 mr-3"></i>
+                    Tools
+                </button>
+                <button class="w-full flex items-center px-3 py-2 text-gray-700 rounded-md hover:bg-gray-100">
+                    <i data-lucide="credit-card" class="w-5 h-5 mr-3"></i>
+                    Membership
+                </button>
+                <button class="w-full flex items-center px-3 py-2 text-gray-700 rounded-md hover:bg-gray-100">
+                    <i data-lucide="settings" class="w-5 h-5 mr-3"></i>
+                    Settings
+                </button>
+            </nav>
+
+            <!-- User Tier Status -->
+            <div class="p-4 border-t border-gray-200">
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="crown" class="w-4 h-4 text-purple-600"></i>
+                            <span class="inline-flex items-center px-2 py-1 rounded text-xs border border-purple-200 text-purple-700 bg-purple-50">
+                                PLATINUM
+                            </span>
+                        </div>
+                        <span class="inline-flex items-center px-2 py-1 rounded text-xs bg-green-100 text-green-800">
+                            Active
+                        </span>
+                    </div>
+                    <div class="text-xs text-gray-500">
+                        <p>Expires: December 31, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logout Button -->
+            <div class="p-4 border-t border-gray-200">
+                <button class="w-full flex items-center px-3 py-2 text-red-600 rounded-md hover:bg-red-50">
+                    <i data-lucide="log-out" class="w-5 h-5 mr-3"></i>
+                    Logout
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-y-auto">
+            <!-- Header -->
+            <header class="bg-white border-b border-gray-200 px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <h1 class="text-2xl font-semibold text-gray-900">Advanced Medical Tools</h1>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm text-gray-600">Dr. Sarah Chen</span>
+                        <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+                            <span class="text-white text-sm font-medium">SC</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="p-6">
+            <!-- Page Header -->
+            <div class="mb-8">
+                <h1 class="text-3xl font-bold text-gray-900">Advanced Medical Tools</h1>
+                <p class="mt-2 text-gray-600">Premium automation tools for enhanced clinical workflow efficiency</p>
+            </div>
+
+            <!-- Tools Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Vitals Generator - Platinum Only -->
+                <div class="bg-white border rounded-lg shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <i data-lucide="heart-pulse" class="w-5 h-5 text-red-600"></i>
+                            <h3 class="text-lg font-semibold text-gray-900">Vitals Generator</h3>
+                            <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                                PLATINUM EXCLUSIVE
+                            </span>
+                        </div>
+                        <p class="text-gray-600">AI-powered vital signs generation with intelligent pattern recognition for realistic patient data</p>
+                    </div>
+                    
+                    <div class="p-6 space-y-6">
+                        <!-- Configuration Panel -->
+                        <div class="space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Patient Age</label>
+                                    <input type="number" value="45" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Gender</label>
+                                    <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Clinical Condition</label>
+                                <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                                    <option>Normal/Healthy</option>
+                                    <option>Hypertension</option>
+                                    <option>Diabetes</option>
+                                    <option>Cardiac Arrhythmia</option>
+                                    <option>Respiratory Distress</option>
+                                    <option>Fever/Infection</option>
+                                    <option>Shock/Hypotension</option>
+                                </select>
+                            </div>
+
+                            <div class="flex items-center space-x-3">
+                                <input type="checkbox" id="realistic" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500">
+                                <label for="realistic" class="text-sm text-gray-700">Apply realistic physiological correlations</label>
+                            </div>
+                        </div>
+
+                        <!-- Generated Vitals Display -->
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h4 class="font-medium text-gray-900 mb-3">Generated Vital Signs</h4>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Blood Pressure:</span>
+                                    <span class="font-medium text-red-600">142/88 mmHg</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Heart Rate:</span>
+                                    <span class="font-medium text-blue-600">78 bpm</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Temperature:</span>
+                                    <span class="font-medium text-orange-600">98.6°F</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Respiratory Rate:</span>
+                                    <span class="font-medium text-green-600">16/min</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">O2 Saturation:</span>
+                                    <span class="font-medium text-blue-600">98%</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Pain Scale:</span>
+                                    <span class="font-medium text-yellow-600">3/10</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <button class="flex-1 bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 flex items-center justify-center space-x-2">
+                                <i data-lucide="refresh-cw" class="w-4 h-4"></i>
+                                <span>Generate New</span>
+                            </button>
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 flex items-center space-x-2">
+                                <i data-lucide="copy" class="w-4 h-4"></i>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quality Check - Platinum Only -->
+                <div class="bg-white border rounded-lg shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <i data-lucide="shield-check" class="w-5 h-5 text-green-600"></i>
+                            <h3 class="text-lg font-semibold text-gray-900">Quality Check</h3>
+                            <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                                PLATINUM EXCLUSIVE
+                            </span>
+                        </div>
+                        <p class="text-gray-600">Advanced AI-powered documentation quality verification with compliance scoring</p>
+                    </div>
+                    
+                    <div class="p-6 space-y-6">
+                        <!-- Upload Area -->
+                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-purple-400 transition-colors">
+                            <i data-lucide="upload" class="w-8 h-8 text-gray-400 mx-auto mb-2"></i>
+                            <p class="text-sm text-gray-600 mb-2">Drop your medical documents here or</p>
+                            <button class="text-purple-600 hover:text-purple-700 font-medium text-sm">browse files</button>
+                            <p class="text-xs text-gray-500 mt-2">Supports PDF, DOC, DOCX (Max 10MB)</p>
+                        </div>
+
+                        <!-- Analysis Results -->
+                        <div class="space-y-4">
+                            <div class="bg-green-50 rounded-lg p-4">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h4 class="font-medium text-green-900">Quality Score</h4>
+                                    <span class="text-2xl font-bold text-green-600">94%</span>
+                                </div>
+                                <div class="w-full bg-green-200 rounded-full h-2">
+                                    <div class="bg-green-600 h-2 rounded-full" style="width: 94%"></div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-3">
+                                <div class="flex items-center space-x-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-sm text-gray-700">Complete patient identification</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-sm text-gray-700">Proper medical terminology usage</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i data-lucide="alert-triangle" class="w-5 h-5 text-yellow-500"></i>
+                                    <span class="text-sm text-gray-700">Missing differential diagnosis section</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-sm text-gray-700">HIPAA compliance verified</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <button class="flex-1 bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 flex items-center justify-center space-x-2">
+                                <i data-lucide="file-check" class="w-4 h-4"></i>
+                                <span>Verify PDF</span>
+                            </button>
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 flex items-center space-x-2">
+                                <i data-lucide="download" class="w-4 h-4"></i>
+                                <span>Report</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Report Generator - Platinum Only -->
+                <div class="bg-white border rounded-lg shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <i data-lucide="file-bar-chart" class="w-5 h-5 text-blue-600"></i>
+                            <h3 class="text-lg font-semibold text-gray-900">Report Generator</h3>
+                            <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                                PLATINUM EXCLUSIVE
+                            </span>
+                        </div>
+                        <p class="text-gray-600">Advanced reporting engine with customizable templates and automated data analysis</p>
+                    </div>
+                    
+                    <div class="p-6 space-y-6">
+                        <!-- Report Configuration -->
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Report Type</label>
+                                <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                                    <option>Monthly Clinical Summary</option>
+                                    <option>Quality Metrics Dashboard</option>
+                                    <option>Patient Outcome Analysis</option>
+                                    <option>Compliance Audit Report</option>
+                                    <option>Custom Analytics Report</option>
+                                </select>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Date Range</label>
+                                    <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                                        <option>Last 30 Days</option>
+                                        <option>Last 3 Months</option>
+                                        <option>Last 6 Months</option>
+                                        <option>Last Year</option>
+                                        <option>Custom Range</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Format</label>
+                                    <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                                        <option>PDF Report</option>
+                                        <option>Excel Workbook</option>
+                                        <option>PowerPoint Slides</option>
+                                        <option>Interactive Dashboard</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="block text-sm font-medium text-gray-700">Include Sections</label>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" checked class="rounded border-gray-300 text-purple-600 focus:ring-purple-500">
+                                        <span class="ml-2 text-sm text-gray-700">Executive Summary</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" checked class="rounded border-gray-300 text-purple-600 focus:ring-purple-500">
+                                        <span class="ml-2 text-sm text-gray-700">Key Metrics</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500">
+                                        <span class="ml-2 text-sm text-gray-700">Trend Analysis</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" checked class="rounded border-gray-300 text-purple-600 focus:ring-purple-500">
+                                        <span class="ml-2 text-sm text-gray-700">Recommendations</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Preview -->
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h4 class="font-medium text-gray-900 mb-2">Report Preview</h4>
+                            <div class="text-sm text-gray-600 space-y-1">
+                                <p>📊 Monthly Clinical Summary Report</p>
+                                <p>📅 December 1-31, 2024</p>
+                                <p>📈 284 patients processed</p>
+                                <p>⚡ 15% efficiency improvement</p>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <button class="flex-1 bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 flex items-center justify-center space-x-2">
+                                <i data-lucide="play" class="w-4 h-4"></i>
+                                <span>Generate Report</span>
+                            </button>
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 flex items-center space-x-2">
+                                <i data-lucide="save" class="w-4 h-4"></i>
+                                <span>Save Template</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Comparison -->
+            <div class="mt-12 bg-white rounded-lg shadow-sm border p-8">
+                <h2 class="text-xl font-bold text-gray-900 mb-6">Platinum Exclusive Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="brain" class="w-6 h-6 text-purple-600"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">AI-Powered Intelligence</h3>
+                        <p class="text-sm text-gray-600">Advanced machine learning algorithms for intelligent pattern recognition and automated decision support</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="shield-check" class="w-6 h-6 text-purple-600"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Enterprise Security</h3>
+                        <p class="text-sm text-gray-600">Bank-level encryption, HIPAA compliance monitoring, and advanced audit trails for complete data protection</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="trending-up" class="w-6 h-6 text-purple-600"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Advanced Analytics</h3>
+                        <p class="text-sm text-gray-600">Comprehensive reporting suite with predictive analytics and customizable business intelligence dashboards</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

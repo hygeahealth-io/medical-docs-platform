@@ -1,0 +1,386 @@
+<svg viewBox="0 0 800 1800" xmlns="http://www.w3.org/2000/svg" width="800" height="1800">
+  <!-- Background -->
+  <rect width="800" height="1800" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="20" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">Complete UX Design Concepts</text>
+  
+  <!-- Current Design -->
+  <g transform="translate(20, 60)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">Current: Ultra-Minimal Design</text>
+    <rect x="0" y="25" width="720" height="120" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Current header -->
+    <text x="20" y="50" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#374151">Key Bindings</text>
+    
+    <!-- Current filter -->
+    <text x="20" y="70" font-family="Arial, sans-serif" font-size="11" fill="#000000">Group:</text>
+    <rect x="60" y="60" width="120" height="20" rx="4" fill="#f5f5f5" stroke="#d1d5db" stroke-width="1"/>
+    <text x="70" y="72" font-family="Arial, sans-serif" font-size="10" fill="#000000">Wounds (4)</text>
+    
+    <!-- Current button -->
+    <rect x="580" y="60" width="80" height="20" rx="4" fill="#374151"/>
+    <text x="605" y="72" font-family="Arial, sans-serif" font-size="9" fill="white">New Binding</text>
+    
+    <!-- Current binding -->
+    <rect x="20" y="90" width="680" height="30" rx="6" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="30" y="97" width="50" height="16" rx="2" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="45" y="107" font-family="Arial, sans-serif" font-size="8" fill="#374151">Ctrl+W</text>
+    <text x="90" y="107" font-family="Arial, sans-serif" font-size="10" fill="#000000">Assessment - Wound assessment template</text>
+    
+    <text x="20" y="135" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">Issues: Cramped 30px rows, small 16px buttons, weak hierarchy</text>
+  </g>
+  
+  <!-- Concept 1: Enhanced Spacing -->
+  <g transform="translate(20, 200)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#15803d">Concept 1: Enhanced Spacing and Visual Hierarchy</text>
+    <rect x="0" y="25" width="720" height="220" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Better header -->
+    <text x="20" y="50" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#374151">Key Bindings</text>
+    
+    <!-- Enhanced filter with proper spacing -->
+    <rect x="20" y="65" width="680" height="45" rx="8" fill="#fafafa" stroke="#f1f5f9" stroke-width="1"/>
+    <text x="35" y="83" font-family="Arial, sans-serif" font-size="12" fill="#000000">Group:</text>
+    
+    <!-- Larger dropdown -->
+    <rect x="85" y="75" width="140" height="25" rx="6" fill="#f5f5f5" stroke="#d1d5db" stroke-width="1"/>
+    <text x="95" y="90" font-family="Arial, sans-serif" font-size="11" fill="#000000">Wounds (4)</text>
+    <polygon points="215,85 220,90 210,90" fill="#6b7280"/>
+    
+    <!-- Larger icons -->
+    <rect x="240" y="80" width="20" height="15" rx="3" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <path d="M247 85L253 85M250 82L250 88" stroke="#6b7280" stroke-width="1"/>
+    
+    <!-- Toggle with more space -->
+    <text x="275" y="90" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">Inactive</text>
+    <rect x="320" y="83" width="24" height="10" rx="5" fill="#e5e7eb"/>
+    
+    <!-- Settings -->
+    <rect x="360" y="80" width="20" height="15" rx="3" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <circle cx="370" cy="87" r="2" fill="none" stroke="#6b7280" stroke-width="1"/>
+    
+    <!-- Divider -->
+    <line x1="35" y1="120" x2="685" y2="120" stroke="#f1f5f9" stroke-width="1"/>
+    
+    <!-- Better positioned button -->
+    <rect x="580" y="130" width="100" height="28" rx="6" fill="#374151"/>
+    <text x="615" y="146" font-family="Arial, sans-serif" font-size="11" fill="white">+ New Binding</text>
+    
+    <!-- Enhanced 45px rows -->
+    <rect x="20" y="170" width="680" height="45" rx="6" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    
+    <!-- Status bar -->
+    <rect x="25" y="175" width="3" height="35" rx="1.5" fill="#10b981"/>
+    
+    <!-- Better keyboard key -->
+    <rect x="40" y="180" width="65" height="20" rx="3" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <rect x="40" y="182" width="65" height="16" rx="3" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="62" y="192" font-family="Arial, sans-serif" font-size="9" fill="#374151">Ctrl+Shift+W</text>
+    
+    <!-- Better content -->
+    <text x="115" y="185" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#000000">Assessment</text>
+    <rect x="180" y="181" width="40" height="14" rx="7" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
+    <text x="192" y="189" font-family="Arial, sans-serif" font-size="7" fill="#166534">Active</text>
+    <rect x="230" y="181" width="40" height="14" rx="7" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="242" y="189" font-family="Arial, sans-serif" font-size="7" fill="#6b7280">Wounds</text>
+    
+    <text x="115" y="200" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">Wound assessment: location - description. Size: measurement...</text>
+    
+    <!-- Larger 24px action buttons -->
+    <rect x="620" y="180" width="24" height="20" rx="4" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <path d="M629 187L633 183L635 185L631 189L629 189Z" stroke="#6b7280" stroke-width="1" fill="none"/>
+    
+    <rect x="650" y="180" width="24" height="20" rx="4" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <path d="M657 186L659 186M659 186L659 188M659 186L661 186M661 186L661 188M659 188L661 188" stroke="#6b7280" stroke-width="1" fill="none"/>
+    
+    <text x="20" y="235" font-family="Arial, sans-serif" font-size="9" fill="#15803d">Improvements: 45px rows, 24px buttons, status bars, visual separators</text>
+  </g>
+  
+  <!-- Concept 2: Status Indicators -->
+  <g transform="translate(20, 440)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#15803d">Concept 2: Status Indicators and Quick Actions</text>
+    <rect x="0" y="25" width="720" height="200" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <text x="20" y="50" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#374151">Key Bindings</text>
+    
+    <!-- Enhanced filter with search -->
+    <rect x="20" y="65" width="680" height="35" rx="8" fill="#fafafa" stroke="#f1f5f9" stroke-width="1"/>
+    <text x="30" y="80" font-family="Arial, sans-serif" font-size="11" fill="#000000">Group:</text>
+    <rect x="70" y="72" width="100" height="20" rx="4" fill="#f5f5f5" stroke="#d1d5db" stroke-width="1"/>
+    <text x="80" y="84" font-family="Arial, sans-serif" font-size="10" fill="#000000">Wounds (4)</text>
+    
+    <!-- Search box -->
+    <rect x="185" y="72" width="140" height="20" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="195" y="84" font-family="Arial, sans-serif" font-size="9" fill="#9ca3af">Search shortcuts...</text>
+    <circle cx="315" cy="82" r="4" fill="none" stroke="#9ca3af" stroke-width="1"/>
+    
+    <!-- Stats -->
+    <text x="345" y="80" font-family="Arial, sans-serif" font-size="9" fill="#6b7280">4 total</text>
+    <text x="345" y="90" font-family="Arial, sans-serif" font-size="9" fill="#6b7280">3 active</text>
+    
+    <rect x="580" y="72" width="80" height="20" rx="4" fill="#374151"/>
+    <text x="605" y="84" font-family="Arial, sans-serif" font-size="9" fill="white">+ New</text>
+    
+    <!-- Rich binding with status -->
+    <rect x="20" y="110" width="680" height="55" rx="6" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    
+    <!-- Detailed status -->
+    <rect x="25" y="115" width="4" height="45" rx="2" fill="#10b981"/>
+    <circle cx="27" cy="120" r="2" fill="#10b981"/>
+    
+    <!-- Enhanced shortcut -->
+    <rect x="40" y="120" width="70" height="18" rx="3" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="62" y="130" font-family="Arial, sans-serif" font-size="8" fill="#374151">Ctrl+Shift+W</text>
+    
+    <!-- Rich content -->
+    <text x="120" y="125" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#000000">Assessment</text>
+    <rect x="185" y="121" width="30" height="12" rx="6" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
+    <text x="195" y="128" font-family="Arial, sans-serif" font-size="7" fill="#166534">Active</text>
+    <rect x="225" y="121" width="35" height="12" rx="6" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="235" y="128" font-family="Arial, sans-serif" font-size="7" fill="#6b7280">Wounds</text>
+    
+    <!-- Usage stats -->
+    <circle cx="270" cy="127" r="2" fill="#10b981"/>
+    <text x="280" y="130" font-family="Arial, sans-serif" font-size="8" fill="#10b981">Used 24 times</text>
+    
+    <text x="120" y="140" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">Wound assessment: location - description. Size: measurement...</text>
+    <text x="120" y="152" font-family="Arial, sans-serif" font-size="8" fill="#9ca3af">Last used: 2 hours ago - Created: March 15</text>
+    
+    <!-- Extended actions -->
+    <rect x="580" y="120" width="18" height="16" rx="3" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <path d="M586 126L590 122L592 124L588 128L586 128Z" stroke="#6b7280" stroke-width="0.8" fill="none"/>
+    
+    <rect x="605" y="120" width="18" height="16" rx="3" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <circle cx="614" cy="128" r="2" fill="none" stroke="#6b7280" stroke-width="0.8"/>
+    
+    <rect x="630" y="120" width="18" height="16" rx="3" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <path d="M635 125L637 125M637 125L637 127M637 125L639 125" stroke="#6b7280" stroke-width="0.8" fill="none"/>
+    
+    <rect x="655" y="120" width="35" height="16" rx="3" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+    <text x="665" y="130" font-family="Arial, sans-serif" font-size="7" fill="#1d4ed8">Copy</text>
+    
+    <text x="20" y="185" font-family="Arial, sans-serif" font-size="9" fill="#15803d">Features: Search, usage stats, timestamps, copy functionality</text>
+  </g>
+  
+  <!-- Concept 3: Grouped Organization -->
+  <g transform="translate(20, 660)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#15803d">Concept 3: Grouped Organization</text>
+    <rect x="0" y="25" width="720" height="240" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <text x="20" y="50" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#374151">Key Bindings</text>
+    
+    <!-- Advanced controls -->
+    <rect x="20" y="65" width="680" height="30" rx="8" fill="#fafafa" stroke="#f1f5f9" stroke-width="1"/>
+    
+    <!-- View toggle -->
+    <text x="30" y="78" font-family="Arial, sans-serif" font-size="10" fill="#000000">View:</text>
+    <rect x="65" y="70" width="40" height="18" rx="4" fill="#374151"/>
+    <text x="78" y="81" font-family="Arial, sans-serif" font-size="8" fill="white">Groups</text>
+    <rect x="110" y="70" width="30" height="18" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="118" y="81" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">List</text>
+    
+    <!-- Sort -->
+    <text x="155" y="81" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">Sort:</text>
+    <rect x="185" y="70" width="50" height="18" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="195" y="81" font-family="Arial, sans-serif" font-size="8" fill="#374151">Recent</text>
+    
+    <rect x="580" y="70" width="80" height="18" rx="4" fill="#374151"/>
+    <text x="605" y="81" font-family="Arial, sans-serif" font-size="8" fill="white">+ New</text>
+    
+    <!-- Group header -->
+    <rect x="20" y="105" width="680" height="25" rx="6" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1"/>
+    
+    <!-- Expand/collapse -->
+    <rect x="25" y="110" width="12" height="12" rx="2" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+    <path d="M29 113L33 117L37 111" stroke="#6b7280" stroke-width="1" fill="none"/>
+    
+    <!-- Group info -->
+    <circle cx="50" cy="117" r="5" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
+    <text x="62" y="120" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#374151">Wounds and Injuries</text>
+    <text x="170" y="120" font-family="Arial, sans-serif" font-size="9" fill="#6b7280">4 shortcuts - 3 active</text>
+    
+    <!-- Group actions -->
+    <rect x="580" y="110" width="40" height="12" rx="2" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="590" y="118" font-family="Arial, sans-serif" font-size="7" fill="#6b7280">+ Add</text>
+    
+    <rect x="625" y="110" width="12" height="12" rx="2" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <circle cx="631" cy="116" r="1" fill="#6b7280"/>
+    
+    <rect x="642" y="110" width="25" height="12" rx="2" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="650" y="118" font-family="Arial, sans-serif" font-size="7" fill="#6b7280">Hide</text>
+    
+    <!-- Grouped bindings -->
+    <rect x="35" y="140" width="665" height="30" rx="4" fill="white" stroke="#f1f5f9" stroke-width="1"/>
+    <rect x="45" y="147" width="45" height="16" rx="2" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="60" y="157" font-family="Arial, sans-serif" font-size="8" fill="#374151">Ctrl+W</text>
+    
+    <text x="100" y="152" font-family="Arial, sans-serif" font-size="10" fill="#000000">Assessment</text>
+    <rect x="160" y="149" width="25" height="10" rx="5" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
+    <text x="168" y="156" font-family="Arial, sans-serif" font-size="6" fill="#166534">Active</text>
+    
+    <text x="100" y="162" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">Quick wound assessment</text>
+    
+    <rect x="35" y="175" width="665" height="30" rx="4" fill="white" stroke="#f1f5f9" stroke-width="1"/>
+    <rect x="45" y="182" width="45" height="16" rx="2" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="60" y="192" font-family="Arial, sans-serif" font-size="8" fill="#374151">Ctrl+D</text>
+    
+    <text x="100" y="187" font-family="Arial, sans-serif" font-size="10" fill="#000000">Treatment</text>
+    <rect x="155" y="184" width="25" height="10" rx="5" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
+    <text x="163" y="191" font-family="Arial, sans-serif" font-size="6" fill="#166534">Active</text>
+    
+    <text x="100" y="197" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">Dressing change notes</text>
+    
+    <!-- Collapsed group -->
+    <rect x="20" y="215" width="680" height="20" rx="6" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1"/>
+    <rect x="25" y="220" width="12" height="12" rx="2" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+    <path d="M29 223L33 223M31 221L31 225" stroke="#6b7280" stroke-width="1"/>
+    
+    <circle cx="50" cy="225" r="5" fill="#fef3c7" stroke="#fde68a" stroke-width="1"/>
+    <text x="62" y="228" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#374151">Medications</text>
+    <text x="140" y="228" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">6 shortcuts - Collapsed</text>
+    
+    <text x="20" y="255" font-family="Arial, sans-serif" font-size="9" fill="#15803d">Organization: Collapsible groups, view modes, sorting</text>
+  </g>
+  
+  <!-- Concept 4: Grid Layout -->
+  <g transform="translate(20, 920)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#15803d">Concept 4: Compact Grid Layout</text>
+    <rect x="0" y="25" width="720" height="200" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <text x="20" y="50" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#374151">Key Bindings</text>
+    
+    <!-- Compact header -->
+    <rect x="20" y="65" width="680" height="25" rx="6" fill="#fafafa" stroke="#f1f5f9" stroke-width="1"/>
+    <text x="30" y="75" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#000000">12 shortcuts</text>
+    <text x="95" y="75" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">•</text>
+    <text x="105" y="75" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">3 groups</text>
+    <text x="150" y="75" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">•</text>
+    <text x="160" y="75" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">10 active</text>
+    
+    <rect x="580" y="67" width="50" height="16" rx="4" fill="#374151"/>
+    <text x="595" y="77" font-family="Arial, sans-serif" font-size="8" fill="white">+ New</text>
+    
+    <rect x="635" y="67" width="25" height="16" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="643" y="77" font-family="Arial, sans-serif" font-size="7" fill="#6b7280">Grid</text>
+    
+    <rect x="665" y="67" width="25" height="16" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+    <text x="673" y="77" font-family="Arial, sans-serif" font-size="7" fill="#6b7280">List</text>
+    
+    <!-- Grid layout -->
+    <!-- Row 1 -->
+    <rect x="20" y="100" width="165" height="35" rx="6" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="25" y="105" width="40" height="14" rx="2" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+    <text x="37" y="114" font-family="Arial, sans-serif" font-size="7" fill="#374151">Ctrl+W</text>
+    <text x="70" y="110" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#000000">Assessment</text>
+    <circle cx="170" cy="108" r="2" fill="#10b981"/>
+    <text x="70" y="120" font-family="Arial, sans-serif" font-size="7" fill="#6b7280">Quick wound check</text>
+    <text x="70" y="129" font-family="Arial, sans-serif" font-size="6" fill="#9ca3af">Used 24 times</text>
+    
+    <rect x="195" y="100" width="165" height="35" rx="6" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="200" y="105" width="40" height="14" rx="2" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+    <text x="212" y="114" font-family="Arial, sans-serif" font-size="7" fill="#374151">Ctrl+D</text>
+    <text x="245" y="110" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#000000">Treatment</text>
+    <circle cx="345" cy="108" r="2" fill="#10b981"/>
+    <text x="245" y="120" font-family="Arial, sans-serif" font-size="7" fill="#6b7280">Dressing change</text>
+    <text x="245" y="129" font-family="Arial, sans-serif" font-size="6" fill="#9ca3af">Used 18 times</text>
+    
+    <rect x="370" y="100" width="165" height="35" rx="6" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="375" y="105" width="40" height="14" rx="2" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+    <text x="387" y="114" font-family="Arial, sans-serif" font-size="7" fill="#374151">Ctrl+H</text>
+    <text x="420" y="110" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#000000">Progress</text>
+    <circle cx="520" cy="108" r="2" fill="#10b981"/>
+    <text x="420" y="120" font-family="Arial, sans-serif" font-size="7" fill="#6b7280">Healing status</text>
+    <text x="420" y="129" font-family="Arial, sans-serif" font-size="6" fill="#9ca3af">Used 15 times</text>
+    
+    <rect x="545" y="100" width="155" height="35" rx="6" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="550" y="105" width="35" height="14" rx="2" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+    <text x="560" y="114" font-family="Arial, sans-serif" font-size="7" fill="#374151">Ctrl+C</text>
+    <text x="590" y="110" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#000000">Care</text>
+    <circle cx="680" cy="108" r="2" fill="#e5e7eb"/>
+    <text x="590" y="120" font-family="Arial, sans-serif" font-size="7" fill="#6b7280">Cleaning</text>
+    <text x="590" y="129" font-family="Arial, sans-serif" font-size="6" fill="#9ca3af">Used 8 times</text>
+    
+    <!-- Row 2 -->
+    <rect x="20" y="145" width="165" height="35" rx="6" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="25" y="150" width="40" height="14" rx="2" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+    <text x="37" y="159" font-family="Arial, sans-serif" font-size="7" fill="#374151">Ctrl+M</text>
+    <text x="70" y="155" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#000000">Medication</text>
+    <circle cx="170" cy="153" r="2" fill="#fbbf24"/>
+    <text x="70" y="165" font-family="Arial, sans-serif" font-size="7" fill="#6b7280">Drug admin</text>
+    <text x="70" y="174" font-family="Arial, sans-serif" font-size="6" fill="#9ca3af">Used 12 times</text>
+    
+    <rect x="195" y="145" width="165" height="35" rx="6" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="200" y="150" width="40" height="14" rx="2" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+    <text x="212" y="159" font-family="Arial, sans-serif" font-size="7" fill="#374151">Ctrl+V</text>
+    <text x="245" y="155" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#000000">Vitals</text>
+    <circle cx="345" cy="153" r="2" fill="#10b981"/>
+    <text x="245" y="165" font-family="Arial, sans-serif" font-size="7" fill="#6b7280">Vital signs</text>
+    <text x="245" y="174" font-family="Arial, sans-serif" font-size="6" fill="#9ca3af">Used 31 times</text>
+    
+    <!-- Add shortcut card -->
+    <rect x="370" y="145" width="165" height="35" rx="6" fill="#f8fafc" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="2,2"/>
+    <circle cx="452" cy="162" r="8" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+    <path d="M449 162L455 162M452 159L452 165" stroke="#6b7280" stroke-width="1"/>
+    <text x="430" y="175" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">Add shortcut</text>
+    
+    <text x="20" y="200" font-family="Arial, sans-serif" font-size="9" fill="#15803d">Grid benefits: Fast scanning, efficient space use, usage indicators</text>
+  </g>
+  
+  <!-- Implementation Roadmap -->
+  <g transform="translate(20, 1140)">
+    <rect x="0" y="0" width="720" height="180" fill="#eff6ff" rx="8" stroke="#3b82f6" stroke-width="1"/>
+    <text x="20" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1d4ed8">Implementation Roadmap</text>
+    
+    <text x="20" y="50" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#1e40af">Phase 1: Enhanced Spacing (Immediate)</text>
+    <text x="30" y="65" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">• Increase row height from 30px to 45px minimum</text>
+    <text x="30" y="77" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">• Enlarge action buttons from 16px to 24px</text>
+    <text x="30" y="89" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">• Add 3px status indicators on left edge</text>
+    <text x="30" y="101" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">• Include visual separators between sections</text>
+    <text x="30" y="113" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">• Improve button positioning and visual weight</text>
+    
+    <text x="380" y="50" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#1e40af">Phase 2: Status and Quick Actions</text>
+    <text x="390" y="65" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">• Add active/inactive visual indicators</text>
+    <text x="390" y="77" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">• Include usage statistics display</text>
+    <text x="390" y="89" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">• Add search functionality</text>
+    <text x="390" y="101" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">• Implement quick copy feature</text>
+    <text x="390" y="113" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">• Show timestamps and metadata</text>
+    
+    <text x="20" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#1e40af">Future Enhancements:</text>
+    <text x="30" y="155" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">• Grouped organization when library grows (20+ shortcuts)</text>
+    <text x="390" y="155" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">• Grid view for power users with many shortcuts</text>
+    
+    <text x="20" y="175" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#1d4ed8">Recommendation: Start with Phase 1 for immediate UX improvements</text>
+  </g>
+  
+  <!-- Summary Comparison -->
+  <g transform="translate(20, 1340)">
+    <rect x="0" y="0" width="720" height="200" fill="#f0fdf4" rx="8" stroke="#16a34a" stroke-width="1"/>
+    <text x="20" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#15803d">Design Comparison Summary</text>
+    
+    <!-- Current vs Concept 1 -->
+    <text x="20" y="50" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#15803d">Current vs Enhanced Spacing:</text>
+    <text x="30" y="65" font-family="Arial, sans-serif" font-size="10" fill="#166534">• Row height: 30px to 45px (+50% breathing room)</text>
+    <text x="30" y="77" font-family="Arial, sans-serif" font-size="10" fill="#166534">• Button size: 16px to 24px (+50% touch target)</text>
+    <text x="30" y="89" font-family="Arial, sans-serif" font-size="10" fill="#166534">• Visual hierarchy: Weak to Strong (status bars, dividers)</text>
+    <text x="30" y="101" font-family="Arial, sans-serif" font-size="10" fill="#166534">• Information density: Cramped to Balanced</text>
+    
+    <!-- Concept benefits -->
+    <text x="380" y="50" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#15803d">Key Benefits by Concept:</text>
+    <text x="390" y="65" font-family="Arial, sans-serif" font-size="10" fill="#166534">• Concept 1: Better usability, accessibility</text>
+    <text x="390" y="77" font-family="Arial, sans-serif" font-size="10" fill="#166534">• Concept 2: Rich information, power features</text>
+    <text x="390" y="89" font-family="Arial, sans-serif" font-size="10" fill="#166534">• Concept 3: Better organization at scale</text>
+    <text x="390" y="101" font-family="Arial, sans-serif" font-size="10" fill="#166534">• Concept 4: Efficient space usage</text>
+    
+    <!-- Implementation effort -->
+    <text x="20" y="125" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#15803d">Implementation Effort:</text>
+    <text x="30" y="140" font-family="Arial, sans-serif" font-size="10" fill="#166534">• Concept 1: Low effort, high impact (CSS + spacing changes)</text>
+    <text x="30" y="152" font-family="Arial, sans-serif" font-size="10" fill="#166534">• Concept 2: Medium effort (new data fields + UI components)</text>
+    <text x="30" y="164" font-family="Arial, sans-serif" font-size="10" fill="#166534">• Concept 3: High effort (grouping logic + collapsible UI)</text>
+    <text x="30" y="176" font-family="Arial, sans-serif" font-size="10" fill="#166534">• Concept 4: Medium effort (grid layout + responsive design)</text>
+    
+    <text x="380" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#15803d">Best ROI:</text>
+    <text x="390" y="155" font-family="Arial, sans-serif" font-size="10" fill="#166534">Concept 1 provides maximum UX improvement</text>
+    <text x="390" y="167" font-family="Arial, sans-serif" font-size="10" fill="#166534">with minimal development effort</text>
+  </g>
+</svg>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickDoc Gold - Report Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-teal': '#0891b2',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Gold Member Tools Interface -->
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <aside class="w-60 bg-white shadow-sm border-r border-gray-200 flex flex-col">
+            <!-- Logo Section -->
+            <div class="p-6 border-b border-gray-200">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-medical-teal rounded-lg flex items-center justify-center">
+                        <i data-lucide="file-text" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">ClickDoc</span>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="flex-1 p-4 space-y-1">
+                <a href="#" class="flex items-center space-x-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">
+                    <i data-lucide="layout-dashboard" class="w-5 h-5"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-3 py-2 rounded-lg bg-medical-teal text-white">
+                    <i data-lucide="wrench" class="w-5 h-5"></i>
+                    <span>Tools</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">
+                    <i data-lucide="credit-card" class="w-5 h-5"></i>
+                    <span>Membership</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">
+                    <i data-lucide="settings" class="w-5 h-5"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <!-- User Tier Status -->
+            <div class="p-4 border-t border-gray-200">
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="crown" class="w-4 h-4 text-yellow-600"></i>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-50 text-yellow-700 border border-yellow-200">
+                                GOLD
+                            </span>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-50 text-green-700 border border-green-200">
+                            Active
+                        </span>
+                    </div>
+                    <div class="text-xs text-gray-500">
+                        <p>Expires: 12/31/2024</p>
+                    </div>
+                    <button class="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-sm py-2 px-4 rounded-md flex items-center justify-center space-x-2">
+                        <i data-lucide="arrow-up" class="w-4 h-4"></i>
+                        <span>Upgrade Now</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Logout Button -->
+            <div class="p-4 border-t border-gray-200">
+                <button class="w-full flex items-center justify-start space-x-3 px-3 py-2 text-red-600 hover:text-red-700 hover:bg-red-50 rounded-lg">
+                    <i data-lucide="log-out" class="w-5 h-5"></i>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8">
+            <div class="max-w-6xl mx-auto">
+                <!-- Header -->
+                <div class="mb-8">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h1 class="text-3xl font-bold text-gray-900 mb-2">Medical Tools</h1>
+                            <p class="text-gray-600">Automated documentation and data entry tools</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-50 text-yellow-700 border border-yellow-200">
+                                <i data-lucide="crown" class="w-3 h-3 mr-1"></i>
+                                Gold Member
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Tabs -->
+                <div class="space-y-6">
+                    <!-- Tab Navigation -->
+                    <div class="border-b border-gray-200">
+                        <nav class="flex space-x-8">
+                            <button class="border-b-2 border-medical-teal text-medical-teal py-2 px-1 text-sm font-medium flex items-center space-x-2">
+                                <i data-lucide="file-text" class="w-4 h-4"></i>
+                                <span>Report Generator</span>
+                            </button>
+                            <button class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 py-2 px-1 text-sm font-medium flex items-center space-x-2">
+                                <i data-lucide="activity" class="w-4 h-4"></i>
+                                <span>Vitals Generator</span>
+                            </button>
+                            <button class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 py-2 px-1 text-sm font-medium flex items-center space-x-2">
+                                <i data-lucide="check-circle" class="w-4 h-4"></i>
+                                <span>Quality Check</span>
+                            </button>
+                            <button class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 py-2 px-1 text-sm font-medium flex items-center space-x-2">
+                                <i data-lucide="keyboard" class="w-4 h-4"></i>
+                                <span>Custom Keys</span>
+                            </button>
+                        </nav>
+                    </div>
+
+                    <!-- Report Generator Tool -->
+                    <div class="bg-white border rounded-lg shadow-sm">
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <i data-lucide="file-text" class="w-5 h-5 text-medical-teal"></i>
+                                <h3 class="text-lg font-semibold text-gray-900">Medical Report Generator</h3>
+                                <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                    GOLD FEATURE
+                                </span>
+                            </div>
+                            <p class="text-gray-600">Generate professional medical reports with customizable templates and automated data population</p>
+                        </div>
+                        
+                        <div class="p-6 space-y-6">
+                            <!-- Report Type Selection -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                <div class="border-2 border-medical-teal bg-teal-50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center space-x-3 mb-3">
+                                        <i data-lucide="heart" class="w-6 h-6 text-medical-teal"></i>
+                                        <h4 class="font-medium text-gray-900">Cardiology Report</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Comprehensive cardiac assessment with vitals, symptoms, and treatment plans</p>
+                                    <div class="mt-3 text-xs text-teal-700 font-medium">✓ SELECTED</div>
+                                </div>
+
+                                <div class="border-2 border-gray-200 hover:border-gray-300 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center space-x-3 mb-3">
+                                        <i data-lucide="brain" class="w-6 h-6 text-gray-500"></i>
+                                        <h4 class="font-medium text-gray-900">Neurology Report</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Neurological examination findings and cognitive assessments</p>
+                                </div>
+
+                                <div class="border-2 border-gray-200 hover:border-gray-300 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center space-x-3 mb-3">
+                                        <i data-lucide="stethoscope" class="w-6 h-6 text-gray-500"></i>
+                                        <h4 class="font-medium text-gray-900">General Medicine</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Standard medical report for routine examinations and follow-ups</p>
+                                </div>
+
+                                <div class="border-2 border-gray-200 hover:border-gray-300 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center space-x-3 mb-3">
+                                        <i data-lucide="user" class="w-6 h-6 text-gray-500"></i>
+                                        <h4 class="font-medium text-gray-900">Pediatrics</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Child-specific medical reports with growth charts and development</p>
+                                </div>
+
+                                <div class="border-2 border-gray-200 hover:border-gray-300 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center space-x-3 mb-3">
+                                        <i data-lucide="zap" class="w-6 h-6 text-gray-500"></i>
+                                        <h4 class="font-medium text-gray-900">Emergency Report</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Rapid assessment reports for emergency department visits</p>
+                                </div>
+
+                                <div class="border-2 border-gray-200 hover:border-gray-300 rounded-lg p-4 cursor-pointer relative">
+                                    <div class="flex items-center space-x-3 mb-3">
+                                        <i data-lucide="plus" class="w-6 h-6 text-gray-500"></i>
+                                        <h4 class="font-medium text-gray-900">Custom Template</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Create your own template with custom fields and sections</p>
+                                    <div class="absolute top-2 right-2">
+                                        <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                                            PLATINUM
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Report Configuration -->
+                            <div class="bg-gray-50 rounded-lg p-6">
+                                <h4 class="font-medium text-gray-900 mb-4">Cardiology Report Configuration</h4>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <!-- Patient Information -->
+                                    <div class="space-y-4">
+                                        <h5 class="text-sm font-medium text-gray-700">Patient Information</h5>
+                                        <div class="space-y-3">
+                                            <div>
+                                                <label class="block text-xs font-medium text-gray-600 mb-1">Patient ID</label>
+                                                <input type="text" value="P-2024-001847" class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm">
+                                            </div>
+                                            <div>
+                                                <label class="block text-xs font-medium text-gray-600 mb-1">Chief Complaint</label>
+                                                <textarea class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm" rows="2" placeholder="Enter primary reason for visit...">Chest pain, shortness of breath</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Report Sections -->
+                                    <div class="space-y-4">
+                                        <h5 class="text-sm font-medium text-gray-700">Include Sections</h5>
+                                        <div class="space-y-2">
+                                            <label class="flex items-center">
+                                                <input type="checkbox" checked class="rounded border-gray-300 text-medical-teal focus:ring-medical-teal">
+                                                <span class="ml-2 text-sm text-gray-700">Vital Signs & Physical Exam</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" checked class="rounded border-gray-300 text-medical-teal focus:ring-medical-teal">
+                                                <span class="ml-2 text-sm text-gray-700">Cardiovascular Assessment</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" checked class="rounded border-gray-300 text-medical-teal focus:ring-medical-teal">
+                                                <span class="ml-2 text-sm text-gray-700">ECG Interpretation</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" class="rounded border-gray-300 text-medical-teal focus:ring-medical-teal">
+                                                <span class="ml-2 text-sm text-gray-700">Laboratory Results</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" checked class="rounded border-gray-300 text-medical-teal focus:ring-medical-teal">
+                                                <span class="ml-2 text-sm text-gray-700">Treatment Plan & Follow-up</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Auto-Population Features -->
+                            <div class="border border-blue-200 bg-blue-50 rounded-lg p-4">
+                                <div class="flex items-center space-x-2 mb-3">
+                                    <i data-lucide="zap" class="w-5 h-5 text-blue-600"></i>
+                                    <h4 class="font-medium text-blue-900">Smart Auto-Population</h4>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div class="space-y-2">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-sm text-blue-800">Recent Vital Signs</span>
+                                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">Connected</span>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-sm text-blue-800">Patient History</span>
+                                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">Connected</span>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-sm text-blue-800">Previous Reports</span>
+                                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">Connected</span>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-sm text-blue-800">Lab Results</span>
+                                            <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">Pending</span>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-sm text-blue-800">Medication List</span>
+                                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">Connected</span>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-sm text-blue-800">Imaging Studies</span>
+                                            <span class="text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded-full">Not Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Report Preview -->
+                            <div class="border border-gray-200 rounded-lg p-4">
+                                <div class="flex items-center justify-between mb-4">
+                                    <h4 class="font-medium text-gray-900">Report Preview</h4>
+                                    <div class="flex space-x-2">
+                                        <button class="px-3 py-1 text-xs bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200">
+                                            <i data-lucide="eye" class="w-3 h-3 inline mr-1"></i>
+                                            Preview
+                                        </button>
+                                        <button class="px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-md hover:bg-blue-200">
+                                            <i data-lucide="edit" class="w-3 h-3 inline mr-1"></i>
+                                            Edit
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white border rounded p-4 text-sm">
+                                    <div class="space-y-3">
+                                        <div class="border-b pb-2">
+                                            <h5 class="font-medium text-gray-900">CARDIOLOGY CONSULTATION REPORT</h5>
+                                            <p class="text-xs text-gray-600">Generated: January 14, 2024 | Patient ID: P-2024-001847</p>
+                                        </div>
+                                        
+                                        <div>
+                                            <h6 class="font-medium text-gray-800 text-xs mb-1">CHIEF COMPLAINT:</h6>
+                                            <p class="text-gray-700 text-xs">Chest pain, shortness of breath</p>
+                                        </div>
+                                        
+                                        <div>
+                                            <h6 class="font-medium text-gray-800 text-xs mb-1">VITAL SIGNS:</h6>
+                                            <p class="text-gray-700 text-xs">BP: 128/82 mmHg | HR: 78 bpm | Temp: 98.6°F | RR: 16/min | O2 Sat: 98%</p>
+                                        </div>
+                                        
+                                        <div>
+                                            <h6 class="font-medium text-gray-800 text-xs mb-1">CARDIOVASCULAR EXAMINATION:</h6>
+                                            <p class="text-gray-700 text-xs">Regular rate and rhythm, no murmurs, gallops, or rubs. Peripheral pulses intact.</p>
+                                        </div>
+                                        
+                                        <div class="text-center text-xs text-gray-500 pt-2 border-t">
+                                            <p>... Additional sections will be populated based on your selections ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex space-x-4">
+                                <button class="flex-1 bg-medical-teal text-white py-3 px-4 rounded-md hover:bg-teal-700 flex items-center justify-center space-x-2">
+                                    <i data-lucide="file-text" class="w-4 h-4"></i>
+                                    <span>Generate Report</span>
+                                </button>
+                                <button class="px-6 py-3 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 flex items-center space-x-2">
+                                    <i data-lucide="save" class="w-4 h-4"></i>
+                                    <span>Save Template</span>
+                                </button>
+                                <button class="px-6 py-3 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 flex items-center space-x-2">
+                                    <i data-lucide="download" class="w-4 h-4"></i>
+                                    <span>Export PDF</span>
+                                </button>
+                            </div>
+
+                            <!-- Platinum Upgrade Prompt -->
+                            <div class="bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-lg p-4">
+                                <div class="flex items-center justify-between mb-3">
+                                    <h4 class="font-medium text-purple-900">Unlock Advanced Features</h4>
+                                    <i data-lucide="crown" class="w-5 h-5 text-purple-600"></i>
+                                </div>
+                                <div class="text-sm text-purple-800 space-y-2">
+                                    <p>• <strong>Custom Templates:</strong> Create unlimited personalized report templates</p>
+                                    <p>• <strong>Advanced AI:</strong> Intelligent auto-completion and clinical decision support</p>
+                                    <p>• <strong>Bulk Generation:</strong> Generate multiple reports simultaneously</p>
+                                    <p>• <strong>Integration Hub:</strong> Connect with EMR systems and lab interfaces</p>
+                                </div>
+                                <button class="mt-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-4 py-2 rounded-md flex items-center space-x-2">
+                                    <i data-lucide="arrow-up" class="w-4 h-4"></i>
+                                    <span>Upgrade to Platinum</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

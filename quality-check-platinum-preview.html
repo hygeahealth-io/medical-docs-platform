@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quality Check - ClickDoc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tier-badge {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+        .tier-badge.platinum {
+            background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
+        }
+        .tier-badge.gold {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-64 bg-white shadow-lg flex flex-col">
+            <!-- Logo -->
+            <div class="p-6 border-b border-gray-200">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">CD</span>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">ClickDoc</span>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="flex-1 p-4 space-y-2">
+                <a href="#" class="flex items-center space-x-3 px-4 py-2 text-gray-700 rounded-lg hover:bg-gray-100">
+                    <i data-lucide="home" class="w-5 h-5"></i>
+                    <span>Dashboard</span>
+                </a>
+                
+                <div class="space-y-1">
+                    <div class="flex items-center space-x-3 px-4 py-2 text-gray-500 text-sm font-medium">
+                        <i data-lucide="wrench" class="w-4 h-4"></i>
+                        <span>TOOLS</span>
+                    </div>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-2 text-purple-700 bg-purple-50 rounded-lg">
+                        <i data-lucide="shield-check" class="w-5 h-5"></i>
+                        <span>AI Quality Check</span>
+                        <span class="ml-auto text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">PLATINUM</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-2 text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i data-lucide="file-text" class="w-5 h-5"></i>
+                        <span>Report Generator</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-2 text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i data-lucide="activity" class="w-5 h-5"></i>
+                        <span>Vitals Generator</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-2 text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i data-lucide="key" class="w-5 h-5"></i>
+                        <span>Custom Keys</span>
+                    </a>
+                </div>
+
+                <div class="space-y-1">
+                    <div class="flex items-center space-x-3 px-4 py-2 text-gray-500 text-sm font-medium">
+                        <i data-lucide="bar-chart" class="w-4 h-4"></i>
+                        <span>ANALYTICS</span>
+                    </div>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-2 text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i data-lucide="trending-up" class="w-5 h-5"></i>
+                        <span>Analytics</span>
+                    </a>
+                </div>
+
+                <div class="space-y-1">
+                    <div class="flex items-center space-x-3 px-4 py-2 text-gray-500 text-sm font-medium">
+                        <i data-lucide="user" class="w-4 h-4"></i>
+                        <span>ACCOUNT</span>
+                    </div>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-2 text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i data-lucide="credit-card" class="w-5 h-5"></i>
+                        <span>Membership</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-2 text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i data-lucide="settings" class="w-5 h-5"></i>
+                        <span>Settings</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-2 text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i data-lucide="bell" class="w-5 h-5"></i>
+                        <span>Notifications</span>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- User Status -->
+            <div class="p-4 border-t border-gray-200">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-medium text-gray-700">Platinum Member</span>
+                    <span class="tier-badge platinum text-white text-xs px-2 py-1 rounded-full">PLATINUM</span>
+                </div>
+                <div class="text-xs text-gray-500">
+                    Premium features enabled
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-auto">
+            <!-- Header -->
+            <div class="bg-white border-b border-gray-200 px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-900">AI Quality Check</h1>
+                        <p class="text-gray-600 mt-1">Analyze medical documents for quality and compliance</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="tier-badge platinum text-white text-sm px-3 py-1 rounded-full font-medium">
+                            Platinum Feature
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <!-- Upload Section -->
+                    <div class="lg:col-span-1">
+                        <div class="bg-white rounded-lg shadow-sm border">
+                            <div class="p-6 border-b border-gray-200">
+                                <h2 class="text-lg font-semibold text-gray-900 flex items-center space-x-2">
+                                    <i data-lucide="upload" class="w-5 h-5"></i>
+                                    <span>Document Upload</span>
+                                </h2>
+                            </div>
+                            
+                            <div class="p-6 space-y-6">
+                                <!-- File Upload Area -->
+                                <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-purple-400 transition-colors">
+                                    <i data-lucide="file-plus" class="w-12 h-12 text-gray-400 mx-auto mb-4"></i>
+                                    <p class="text-gray-600 mb-2">Drop your medical document here</p>
+                                    <p class="text-sm text-gray-500 mb-4">or click to browse files</p>
+                                    <button class="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 text-sm">
+                                        Choose File
+                                    </button>
+                                    <p class="text-xs text-gray-500 mt-3">Supports PDF, DOC, DOCX up to 10MB</p>
+                                </div>
+
+                                <!-- Uploaded File -->
+                                <div class="bg-gray-50 rounded-lg p-4 border">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+                                            <i data-lucide="file-text" class="w-5 h-5 text-red-600"></i>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="font-medium text-gray-900">Patient_Chart_045.pdf</p>
+                                            <p class="text-sm text-gray-500">2.4 MB • Uploaded</p>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                            <span class="text-sm text-green-600">Ready</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Quick Settings -->
+                                <div>
+                                    <h3 class="font-medium text-gray-900 mb-3">Quick Analysis</h3>
+                                    <button class="w-full bg-gray-100 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-200 text-sm mb-3">
+                                        Use Default Settings
+                                    </button>
+                                </div>
+
+                                <!-- Analyze Button -->
+                                <div class="pt-4">
+                                    <button class="w-full bg-purple-600 text-white px-4 py-3 rounded-md hover:bg-purple-700 flex items-center justify-center space-x-2 font-medium">
+                                        <i data-lucide="play" class="w-5 h-5"></i>
+                                        <span>Analyze Document</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analysis Settings Panel -->
+                    <div class="lg:col-span-2">
+                        <div class="bg-white rounded-lg shadow-sm border">
+                            <div class="p-6 border-b border-gray-200">
+                                <h2 class="text-lg font-semibold text-gray-900 flex items-center space-x-2">
+                                    <i data-lucide="settings" class="w-5 h-5"></i>
+                                    <span>Analysis Settings</span>
+                                </h2>
+                            </div>
+                            
+                            <div class="p-6 space-y-8">
+                                <!-- Quality Check Categories -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="space-y-4">
+                                        <h3 class="font-medium text-gray-900">Patient Information</h3>
+                                        <div class="space-y-3">
+                                            <label class="flex items-center">
+                                                <input type="checkbox" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500" checked>
+                                                <span class="ml-2 text-sm text-gray-700">Correct patient name</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500" checked>
+                                                <span class="ml-2 text-sm text-gray-700">Correct date of birth</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500" checked>
+                                                <span class="ml-2 text-sm text-gray-700">Correct medical record number</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-4">
+                                        <h3 class="font-medium text-gray-900">Clinical Documentation</h3>
+                                        <div class="space-y-3">
+                                            <label class="flex items-center">
+                                                <input type="checkbox" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500" checked>
+                                                <span class="ml-2 text-sm text-gray-700">Correct diagnosis and/or treatment</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500" checked>
+                                                <span class="ml-2 text-sm text-gray-700">Medications prescribed vs home medications</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-4">
+                                        <h3 class="font-medium text-gray-900">Diabetes Care</h3>
+                                        <div class="space-y-3">
+                                            <label class="flex items-center">
+                                                <input type="checkbox" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500" checked>
+                                                <span class="ml-2 text-sm text-gray-700">Blood sugar checked for diabetes patients</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-4">
+                                        <h3 class="font-medium text-gray-900">Catheter Care</h3>
+                                        <div class="space-y-3">
+                                            <label class="flex items-center">
+                                                <input type="checkbox" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500" checked>
+                                                <span class="ml-2 text-sm text-gray-700">Foley catheter insertion date documented</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500" checked>
+                                                <span class="ml-2 text-sm text-gray-700">Catheter size documented</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-4">
+                                        <h3 class="font-medium text-gray-900">Wound Assessment</h3>
+                                        <div class="space-y-3">
+                                            <label class="flex items-center">
+                                                <input type="checkbox" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500" checked>
+                                                <span class="ml-2 text-sm text-gray-700">Wound type documented</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500" checked>
+                                                <span class="ml-2 text-sm text-gray-700">Wound location documented</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500" checked>
+                                                <span class="ml-2 text-sm text-gray-700">Wound treatment documented</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Analyze Button -->
+                                <div class="border-t pt-6">
+                                    <button class="w-full bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center space-x-2 transition-colors">
+                                        <i data-lucide="play" class="w-5 h-5"></i>
+                                        <span>Analyze Document</span>
+                                    </button>
+                                    <p class="text-sm text-gray-500 text-center mt-2">Analysis will begin immediately after document upload</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
