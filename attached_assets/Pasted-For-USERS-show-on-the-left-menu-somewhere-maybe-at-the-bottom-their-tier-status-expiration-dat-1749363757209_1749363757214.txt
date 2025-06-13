@@ -1,0 +1,91 @@
+For USERS, show on the left menu somewhere , maybe at the bottom, their tier, status, expiration date, and button for upgrade (standard and gold members).
+---
+Tools are only available for gold members and platinum. The pages are different for gold vs platinum. please generate different pages and provide screenshots for each tier of each tool. For gold members, they will be given preview of platinum features, but it will be greyed out and not able to access the tool. have call to action somewhere on the page that its available for platinum members. upgrade now.
+
+-
+
+Report Generator 
+
+Gold: UNAVAILABLE FOR GOLD MEMBERS
+
+Platinum:
+
+Should be customized to specific companies for example. Tar there should be an uploaded scanned report sheet. So when you generate a report information from PDF and the automated settings will generate a new scan file filled out 
+
+If it wasn't but let's say job one or job. 2. They're looking for 
+Start time and start date 
+Requested supplies and equipments 
+General summary. This includes caregiver status, home situation. Medications and treatments adl's
+
+[Think this should be really AI.Because the information will need to be red and then template should be followed]
+
+
+..
+Vitals GENERATOR 
+
+Gold:
+Users will be able to customize their vital signs range. It will show a slider that has a mimium and maximum. Min and Max will be determined by admin. But users can make the range tighter based in personal preference.
+
+Platinum:
+Includes features of gold. In addition to gold features, platinum will have ability to have history of vitals. It will show the patient name, and previous vitals generated. Users can config their settings to how much history is to be saved. There will be a maximum amount they are allowed.
+
+Platinum users will also have the ability to have sets of different vital ranges. They can create their own custom templates, for example for elderly, pediatric, heart failure adults. We can provide healthy range vital signs for adult.  For heart failure (CHF) patients, we can have the ranges slightly higher. Platinum users can customize and save their own templates.
+
+They will have personalized experience. for example, if they want to document if they are on insulin then they can have a vitals generated between higher 100s and a low 200s or if they want. 
+
+Please provide a small description of this somewhere on the page. Why have templates? if not a small description, maybe a icon of the letter "i"  so then they click or hover, they will have an explanation. For some, they may want to follow documentation rule of first having the patient at the beginning of the episode towards borderline abnormal, still within normal limits though. They can have templates for different diagnoses. We can add keywords to each template. On the chrome extension app there are some options. If  selected on the chrome extension app,  these keywords will be tagged to the  template of vitals.-CHF
+-Diabetes
+-Antibiotics/infection
+....
+
+QUALITY CHECK Tool
+
+Gold: UNAVAILABLE FOR GOLD MEMBERS
+
+Platinum:
+
+In the config settings, they can choose how many Quality Check sessions to save. Users can click and view on recent sessions previously made. Users will have the ability to export previous sessions as well, either export as jpg, pdf, text, or copy text. Share button for emails, so they can send to team, boss, asssitant.
+Users can choose how many sessions to save, default is 20.
+
+
+...
+
+CUSTOM KEYS
+
+Gold: Yeah gold numbers can actually customize. Which keys do what? They can customize their own text as well 
+
+Platinum:
+Includes features of gold. Platinum members have the ability to create sets and even use AI to generate their text
+
+
+
+
+
+
+
+
+
+===========
+
+MEMBER MANAGEMENT (admins)
+
+Have a button at top right of the page, the ability to Export users to csv. Then the search function will need some adjustments.
+
+Search by:
+name or email, Status, Tier, Role. choose Date Range . Clear Filters  button.
+
+There will be some fixes for the member list. The columns will include:
+MEMBER (Name)
+EMAIL 
+JOIN DATE
+LAST LOGIN (date)
+STATUS (Active/Inactive)
+TIER (Standard/Gold/Platinum)
+ROLE (Admin/User)
+Actions (edit: tier, role, name, email, remove)
+
+"Inactive" status is given if they haven't their fees on time, or if membership is expired. 
+
+--
+
+Please provide updated screenshots for the requests above.

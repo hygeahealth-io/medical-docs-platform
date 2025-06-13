@@ -1,0 +1,61 @@
+For Quality Check Configuration, Here's more information on how the tool works. This Quality Check tool only goes one direction. under "PDF Comparison FIelds", this is what we reference. It is the baseline and It is what should be present and what to look for in the PDF. It is what we compare from. 
+
+For what we compare to, information will be gathered from the automation and summary/narrative. Alerts should be made if there is a mismatch or missing information. If there is a PDF field where nothing is documented or present here, then it is not a problem and no alerts should be made.
+
+PDF Comparison Fields: check the PDF if fields are documented. If documented, this means it should be present with the patient, an existing treatment. But don't confuse it with hospital treatment. Just only focus on what was given to patient for home treatment, or if they have it long term, or if they were discharged with it temporarily.
+Automation App Fields: Check to see if a documentation was made. Field should be automatically added if present in PDF
+
+ADMINS: For admin Quality Check Configuration, it shouldnt be "PDF Comparison Fields"  vs "Automation App Fields". It should be PDF fields to monitor, and with each field, admins will be able add keywords to be matched in the automation app fields or summary created after automation completed. The chrome extension app first does the automation, then summary will be generated. This summary or narrative is what the Quality Check tool will look at. 
+
+Default PDF Fields
+-Foley catheter
+-Wound
+-Ostomy
+-IV/PICC line 
+-Antibiotics
+-Insulin
+
+Automation App Fields: (check if these were documented in narrative, and if automation was done)
+Foley catheter size? 
+Wound type
+Wound location
+Wound treatment, procedure done and supplies used.
+Antibiotic name, dosage, frequency, route matches?
+Antibiotic Start date?
+Insulin administration dosage and frequency matches? 
+(if insulin) blood sugar documented?
+(if IV TPN) feed rate? formula used?
+
+For Alert Settings, Alert on Mismatch and Generate Quality Reports, these will always be on. Remove these from the Admin Tools Configuration. But in the USERS  tool settings for Quality Check configuration, they should be able to choose how to be alerted by email text or just notification on their dashboard. 
+
+please generate page for USER tools configuration for Quality Check and provide screenshot preview.
+
+---
+Vitals Generator, can we remove "Number of Vital Signs"
+
+For blood pressure configuration, there should be 2. Systolic and diastolic. The systolic minimum is 90, maximum is 160. Diastolic min is 60, max is 90. Temperature range is 96 to 101. Respirations is 12 to 22. Oxygen saturation 90% to 100% to room air. Remove height. remove weight. remove bmi.
+
+----------
+under User Management, remove "max users per tier" section.
+
+
+----------
+
+For admin Security Configuration, change the Require Two-Factor Authentication. It should always be required. Instead just put:
+-how often admins must re-authenticate (e.g. every 30 days for trusted devices)
+-what actions trigger a reauthentication, etc.
+-Log all 2fa failed attempts, 2fa resets
+for USERS config settings, please give them the option to choose. Whether it should be SMS, email, backup codes, yubikey or similar, biometrics.
+
+---
+Custom Key Bindings
+For admins, we need to add key binding sets. Admins will create default sets with specific key bindings. Platinum users will also be able to customize their own group of keybindings. Please create a way where a set of key bindings can be grouped into a set. Either by adding sets in a separate section at top of page, or creating a set, then under each set will be that grouped of key bindings.
+
+Default sets will be, wounds, medications, IV/PICC, diabetes, Gtube.
+
+
+------------
+
+please generate the necessary pages, update requested pages, then generate screenshots for preview.
+
+
