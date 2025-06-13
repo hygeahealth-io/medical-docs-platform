@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 11% 98%; /* #F5F7FA */
+    --foreground: 210 11% 15%; /* #222831 */
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 210 11% 15%; /* #222831 */
+    --popover: 0 0% 100%; /* #FFFFFF */
+    --popover-foreground: 210 11% 15%; /* #222831 */
+    --primary: 178 60% 33%; /* #0D9488 - Medical Teal */
+    --primary-foreground: 210 40% 98%; /* #F8FAFC */
+    --secondary: 210 40% 96%; /* #F1F5F9 */
+    --secondary-foreground: 210 11% 15%; /* #222831 */
+    --muted: 210 40% 96%; /* #F1F5F9 */
+    --muted-foreground: 215 16% 47%; /* #64748B */
+    --accent: 210 40% 94%; /* #E2E8F0 */
+    --accent-foreground: 210 11% 15%; /* #222831 */
+    --destructive: 0 84% 60%; /* #EF4444 */
+    --destructive-foreground: 210 40% 98%; /* #F8FAFC */
+    --border: 214 32% 91%; /* #E2E8F0 */
+    --input: 214 32% 91%; /* #E2E8F0 */
+    --ring: 178 60% 33%; /* #0D9488 - Medical Teal */
+    --radius: 0.5rem;
+    --medical-teal: 178 60% 33%; /* #0D9488 */
+    --medical-teal-light: 178 60% 45%; /* #14B8A6 */
+    --medical-teal-dark: 178 60% 25%; /* #0F766E */
+  }
+
+  .dark {
+    --background: 210 11% 7%; /* #0F172A */
+    --foreground: 210 40% 98%; /* #F8FAFC */
+    --card: 210 11% 9%; /* #1E293B */
+    --card-foreground: 210 40% 98%; /* #F8FAFC */
+    --popover: 210 11% 9%; /* #1E293B */
+    --popover-foreground: 210 40% 98%; /* #F8FAFC */
+    --primary: 178 60% 45%; /* #14B8A6 - Medical Teal Light */
+    --primary-foreground: 210 11% 7%; /* #0F172A */
+    --secondary: 215 25% 27%; /* #334155 */
+    --secondary-foreground: 210 40% 98%; /* #F8FAFC */
+    --muted: 215 25% 27%; /* #334155 */
+    --muted-foreground: 217 11% 65%; /* #94A3B8 */
+    --accent: 215 25% 27%; /* #334155 */
+    --accent-foreground: 210 40% 98%; /* #F8FAFC */
+    --destructive: 0 62% 30%; /* #991B1B */
+    --destructive-foreground: 210 40% 98%; /* #F8FAFC */
+    --border: 215 25% 27%; /* #334155 */
+    --input: 215 25% 27%; /* #334155 */
+    --ring: 178 60% 45%; /* #14B8A6 - Medical Teal Light */
+    --medical-teal: 178 60% 45%; /* #14B8A6 */
+    --medical-teal-light: 178 60% 55%; /* #2DD4BF */
+    --medical-teal-dark: 178 60% 35%; /* #0D9488 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  }
+}
+
+/* Medical-themed utility classes */
+.medical-teal {
+  @apply text-[#0D9488];
+}
+
+.bg-medical-teal {
+  @apply bg-[#0D9488];
+}
+
+.border-medical-teal {
+  @apply border-[#0D9488];
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-gray-300;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+
+/* Loading animations */
+@keyframes pulse-medical {
+  0%, 100% {
+    opacity: 1;
+    background-color: hsl(178, 60%, 33%);
+  }
+  50% {
+    opacity: 0.5;
+    background-color: hsl(178, 60%, 45%);
+  }
+}
+
+.animate-pulse-medical {
+  animation: pulse-medical 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Focus states */
+.focus-medical:focus {
+  @apply outline-none ring-2 ring-[#0D9488] ring-offset-2;
+}
+
+/* Medical card styles */
+.medical-card {
+  @apply bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200;
+}
+
+.medical-card-header {
+  @apply p-6 border-b border-gray-200;
+}
+
+.medical-card-content {
+  @apply p-6;
+}
+
+/* Status indicators */
+.status-active {
+  @apply bg-green-100 text-green-800 border-green-200;
+}
+
+.status-inactive {
+  @apply bg-red-100 text-red-800 border-red-200;
+}
+
+.status-pending {
+  @apply bg-yellow-100 text-yellow-800 border-yellow-200;
+}
+
+/* Tier badges */
+.tier-standard {
+  @apply bg-gray-100 text-gray-800;
+}
+
+.tier-gold {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.tier-platinum {
+  @apply bg-purple-100 text-purple-800;
+}
